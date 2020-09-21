@@ -1,0 +1,871 @@
+<html>
+<head><meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+span.cls_004{font-family:Arial,serif;font-size:6.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_004{font-family:Arial,serif;font-size:6.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_005{font-family:Arial,serif;font-size:7.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_005{font-family:Arial,serif;font-size:7.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_003{font-family:Arial,serif;font-size:24.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_003{font-family:Arial,serif;font-size:24.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_006{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_006{font-family:Arial,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_007{font-family:Arial,serif;font-size:20.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_007{font-family:Arial,serif;font-size:20.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_008{font-family:Arial,serif;font-size:6.6px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_008{font-family:Arial,serif;font-size:6.6px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_009{font-family:Arial,serif;font-size:6.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_009{font-family:Arial,serif;font-size:6.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_010{font-family:Arial,serif;font-size:8.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_010{font-family:Arial,serif;font-size:8.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_011{font-family:Arial,serif;font-size:10.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_011{font-family:Arial,serif;font-size:10.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_012{font-family:Arial,serif;font-size:6.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_012{font-family:Arial,serif;font-size:6.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_013{font-family:Arial,serif;font-size:6.4px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_013{font-family:Arial,serif;font-size:6.4px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_014{font-family:Arial,serif;font-size:6.2px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_014{font-family:Arial,serif;font-size:6.2px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_015{font-family:Arial,serif;font-size:6.8px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_015{font-family:Arial,serif;font-size:6.8px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_016{font-family:Arial,serif;font-size:6.9px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_016{font-family:Arial,serif;font-size:6.9px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_017{font-family:Arial,serif;font-size:7.5px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_017{font-family:Arial,serif;font-size:7.5px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_018{font-family:Times,serif;font-size:17.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_018{font-family:Times,serif;font-size:17.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_019{font-family:Arial,serif;font-size:7.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_019{font-family:Arial,serif;font-size:7.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_020{font-family:Arial,serif;font-size:6.5px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_020{font-family:Arial,serif;font-size:6.5px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_021{font-family:Arial,serif;font-size:7.9px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_021{font-family:Arial,serif;font-size:7.9px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_022{font-family:Arial,serif;font-size:7.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_022{font-family:Arial,serif;font-size:7.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_023{font-family:Arial,serif;font-size:7.8px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_023{font-family:Arial,serif;font-size:7.8px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_024{font-family:Arial,serif;font-size:8.1px;color:rgb(33,31,31);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_024{font-family:Arial,serif;font-size:8.1px;color:rgb(33,31,31);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_025{font-family:Arial,serif;font-size:7.6px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_025{font-family:Arial,serif;font-size:7.6px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_026{font-family:Arial,serif;font-size:5.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_026{font-family:Arial,serif;font-size:5.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_027{font-family:Arial,serif;font-size:7.6px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_027{font-family:Arial,serif;font-size:7.6px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_028{font-family:Arial,serif;font-size:6.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_028{font-family:Arial,serif;font-size:6.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_029{font-family:Arial,serif;font-size:8.3px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_029{font-family:Arial,serif;font-size:8.3px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_030{font-family:Arial,serif;font-size:5.6px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_030{font-family:Arial,serif;font-size:5.6px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_049{font-family:Arial,serif;font-size:8.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: underline}
+div.cls_049{font-family:Arial,serif;font-size:8.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_031{font-family:Arial,serif;font-size:7.3px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_031{font-family:Arial,serif;font-size:7.3px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_032{font-family:Arial,serif;font-size:8.2px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_032{font-family:Arial,serif;font-size:8.2px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_033{font-family:Arial,serif;font-size:8.2px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_033{font-family:Arial,serif;font-size:8.2px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_034{font-family:Arial,serif;font-size:7.4px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_034{font-family:Arial,serif;font-size:7.4px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_035{font-family:Arial,serif;font-size:7.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_035{font-family:Arial,serif;font-size:7.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_036{font-family:Arial,serif;font-size:8.2px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_036{font-family:Arial,serif;font-size:8.2px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_037{font-family:Arial,serif;font-size:7.6px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_037{font-family:Arial,serif;font-size:7.6px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_039{font-family:Arial,serif;font-size:6.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_039{font-family:Arial,serif;font-size:6.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_040{font-family:Arial,serif;font-size:7.2px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_040{font-family:Arial,serif;font-size:7.2px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_041{font-family:Arial,serif;font-size:6.2px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_041{font-family:Arial,serif;font-size:6.2px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_038{font-family:Arial,serif;font-size:8.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_038{font-family:Arial,serif;font-size:8.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_042{font-family:Arial,serif;font-size:7.8px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_042{font-family:Arial,serif;font-size:7.8px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_043{font-family:Arial,serif;font-size:9.6px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_043{font-family:Arial,serif;font-size:9.6px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_044{font-family:Arial,serif;font-size:9.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_044{font-family:Arial,serif;font-size:9.7px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_045{font-family:Arial,serif;font-size:6.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_045{font-family:Arial,serif;font-size:6.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_046{font-family:Arial,serif;font-size:6.4px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_046{font-family:Arial,serif;font-size:6.4px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_047{font-family:Arial,serif;font-size:5.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_047{font-family:Arial,serif;font-size:5.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_048{font-family:Arial,serif;font-size:7.0px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_048{font-family:Arial,serif;font-size:7.0px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+-->
+</style>
+</head>
+<body>
+<div style="position:absolute;left:50%;margin-left:-306px;top:0px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="1040_background1.jpg" width=612 height=792></div>
+<div style="position:absolute;left:108.80px;top:37.88px" class="cls_004"><span class="cls_004">Department of the Treasury—Internal Revenue Service</span></div>
+<div style="position:absolute;left:278.70px;top:37.00px" class="cls_005"><span class="cls_005">(99)</span></div>
+<div style="position:absolute;left:50.40px;top:29.14px" class="cls_003"><span class="cls_003">1040</span></div>
+<div style="position:absolute;left:108.80px;top:44.23px" class="cls_006"><span class="cls_006">U.S. Individual Income Tax Return</span></div>
+<div style="position:absolute;left:305.20px;top:34.28px" class="cls_007"><span class="cls_007">2017</span></div>
+<div style="position:absolute;left:363.51px;top:49.00px" class="cls_005"><span class="cls_005">OMB No. 1545-0074</span></div>
+<div style="position:absolute;left:435.77px;top:49.33px" class="cls_004"><span class="cls_004">IRS Use Only—Do not write or staple in this space.</span></div>
+<div style="position:absolute;left:40.00px;top:61.63px" class="cls_008"><span class="cls_008">For the year Jan. 1-Dec. 31, 2017, or other tax year beginning</span></div>
+<div style="position:absolute;left:317.80px;top:61.63px" class="cls_008"><span class="cls_008">, 2017, ending</span></div>
+      <div style="position:absolute;left:225.80px;top:62.63px" class="cls_008"><span class="cls_008"><input type="text" style="font-size:5pt;height:8px;width:90px;" ></span></div>
+<div style="position:absolute;left:425.80px;top:61.56px" class="cls_009"><span class="cls_009">, 20</span></div>
+      <div style="position:absolute;left:360.80px;top:62.56px" class="cls_009"><span class="cls_009"><input type="text" style="font-size:5pt;height:8px;width:62px;" ></span></div>
+      <div style="position:absolute;left:438.80px;top:62.56px" class="cls_010"><span class="cls_010"><input type="text" style="font-size:5pt;height:8px;width:20px;" ></span></div>
+<div style="position:absolute;left:472.00px;top:59.78px" class="cls_010"><span class="cls_010">See separate instructions.</span></div>
+<div style="position:absolute;left:40.00px;top:71.53px" class="cls_005"><span class="cls_005">Your first name and initial</span></div>
+     <div style="position:absolute;left:40.00px;top:80.53px" class="cls_011"><span class="cls_011"><input type="text" style="font-size:9pt;height:15px;width:170px;" ></span></div>
+<div style="position:absolute;left:220.00px;top:71.50px" class="cls_005"><span class="cls_005">Last name</span></div>
+     <div style="position:absolute;left:220.00px;top:80.53px" class="cls_012"><span class="cls_012"><input type="text" style="font-size:9pt;height:15px;width:235px;" ></span></div>
+<div style="position:absolute;left:472.00px;top:71.50px" class="cls_005"><span class="cls_005">Your social security number</span></div>
+      <div style="position:absolute;left:470.00px;top:80.50px" class="cls_013"><span class="cls_013"><input type="text" style="font-size:9pt;height:15px;width:29px;" ></span></div>
+      <div style="position:absolute;left:503.00px;top:80.50px" class="cls_014"><span class="cls_014"><input type="text" style="font-size:9pt;height:15px;width:18px;" ></span></div>
+      <div style="position:absolute;left:525.00px;top:80.50px" class="cls_015"><span class="cls_015"><input type="text" style="font-size:9pt;height:15px;width:50px;" ></span></div>
+<div style="position:absolute;left:40.00px;top:95.52px" class="cls_005"><span class="cls_005">If a joint return, spouse’s first name and initial</span></div>
+     <div style="position:absolute;left:40.00px;top:104.50px" class="cls_016"><span class="cls_016"><input type="text" style="font-size:9pt;height:15px;width:170px;" ></span></div>
+<div style="position:absolute;left:220.00px;top:95.50px" class="cls_005"><span class="cls_005">Last name</span></div>
+     <div style="position:absolute;left:220.00px;top:104.50px" class="cls_017"><span class="cls_017"><input type="text" style="font-size:9pt;height:15px;width:235px;" ></span></div>
+<div style="position:absolute;left:472.00px;top:95.91px" class="cls_009"><span class="cls_009">Spouse’s social security number</span></div>
+      <div style="position:absolute;left:470.00px;top:104.50px" class="cls_018"><span class="cls_018"><input type="text" style="font-size:9pt;height:15px;width:29px;" ></span></div>
+      <div style="position:absolute;left:503.00px;top:104.50px" class="cls_019"><span class="cls_019"><input type="text" style="font-size:9pt;height:15px;width:18px;" ></span></div>
+      <div style="position:absolute;left:525.00px;top:104.50px" class="cls_020"><span class="cls_020"><input type="text" style="font-size:9pt;height:15px;width:50px;" ></span></div>
+<div style="position:absolute;left:40.00px;top:119.56px" class="cls_005"><span class="cls_005">Home address (number and street). If you have a P.O. box, see instructions.</span></div>
+     <div style="position:absolute;left:40.00px;top:127.50px" class="cls_021"><span class="cls_021"><input type="text" style="font-size:9pt;height:15px;width:375px;" ></span></div>
+<div style="position:absolute;left:432.48px;top:119.50px" class="cls_005"><span class="cls_005">Apt. no.</span></div>
+     <div style="position:absolute;left:421.00px;top:127.50px" class="cls_022"><span class="cls_022"><input type="text" style="font-size:9pt;height:15px;width:45px;" ></span></div>
+<div style="position:absolute;left:470.20px;top:122.36px" class="cls_011"><span class="cls_011">▲</span><span class="cls_005"> Make sure the SSN(s) above</span></div>
+<div style="position:absolute;left:488.30px;top:130.76px" class="cls_005"><span class="cls_005">and on line 6c are correct.</span></div>
+<div style="position:absolute;left:40.00px;top:143.92px" class="cls_009"><span class="cls_009">City, town or post office, state, and ZIP code. If you have a foreign address, also complete spaces below (see instructions).</span></div>
+     <div style="position:absolute;left:40.00px;top:152.50px" class="cls_023"><span class="cls_023"><input type="text" style="font-size:9pt;height:15px;width:417px;" ></span></div>
+<div style="position:absolute;left:476.95px;top:144.92px" class="cls_009"><span class="cls_009">Presidential Election Campaign</span></div>
+<div style="position:absolute;left:470.00px;top:156.45px" class="cls_012"><span class="cls_012">Check here if you, or your spouse if filing</span></div>
+<div style="position:absolute;left:470.00px;top:164.45px" class="cls_012"><span class="cls_012">jointly, want $3 to go to this fund. Checking</span></div>
+<div style="position:absolute;left:40.00px;top:167.50px" class="cls_005"><span class="cls_005">Foreign country name</span></div>
+     <div style="position:absolute;left:40.00px;top:176.50px" class="cls_024"><span class="cls_024"><input type="text" style="font-size:9pt;height:15px;width:200px;" ></span></div>
+<div style="position:absolute;left:263.20px;top:167.56px" class="cls_005"><span class="cls_005">Foreign province/state/county</span></div>
+     <div style="position:absolute;left:262.00px;top:176.50px" class="cls_0025"><span class="cls_0025"><input type="text" style="font-size:9pt;height:15px;width:138px;" ></span></div>
+<div style="position:absolute;left:407.20px;top:167.86px" class="cls_009"><span class="cls_009">Foreign postal code</span></div>
+     <div style="position:absolute;left:407.00px;top:176.50px" class="cls_0265"><span class="cls_0026"><input type="text" style="font-size:9pt;height:15px;width:58px;" ></span></div>
+<div style="position:absolute;left:470.00px;top:172.45px" class="cls_012"><span class="cls_012">a box below will not change your tax or</span></div>
+<div style="position:absolute;left:470.00px;top:180.44px" class="cls_012"><span class="cls_012">refund.</span></div>
+<div style="position:absolute;left:524.63px;top:181.90px" class="cls_013"><span class="cls_013">You</span></div>
+     <div style="position:absolute;left:505.63px;top:175.90px" class="cls_013"><span class="cls_013"><input type="checkbox"></span></div>
+<div style="position:absolute;left:552.59px;top:182.00px" class="cls_014"><span class="cls_014">Spouse</span></div>
+     <div style="position:absolute;left:533.63px;top:175.90px" class="cls_014"><span class="cls_014"><input type="checkbox"></span></div>
+<div style="position:absolute;left:117.95px;top:193.71px" class="cls_010"><span class="cls_010">1</span></div>
+     <div style="position:absolute;left:122.00px;top:189.71px" class="cls_010"><span class="cls_010"><input type="checkbox"></span></div>
+<div style="position:absolute;left:144.00px;top:193.71px" class="cls_010"><span class="cls_010">Single</span></div>
+<div style="position:absolute;left:348.35px;top:193.71px" class="cls_010"><span class="cls_010">4</span></div>
+     <div style="position:absolute;left:352.40px;top:191.29px" class="cls_015"><span class="cls_015"><input type="checkbox"></span></div>
+<div style="position:absolute;left:374.40px;top:195.29px" class="cls_015"><span class="cls_015">Head of household (with qualifying person). (See instructions.)</span></div>
+<div style="position:absolute;left:36.00px;top:196.22px" class="cls_011"><span class="cls_011">Filing Status</span></div>
+<div style="position:absolute;left:117.95px;top:205.71px" class="cls_010"><span class="cls_010">2</span></div>
+     <div style="position:absolute;left:122.00px;top:201.71px" class="cls_011"><span class="cls_011"><input type="checkbox"></span></div>
+<div style="position:absolute;left:144.00px;top:205.71px" class="cls_010"><span class="cls_010">Married filing jointly (even if only one had income)</span></div>
+<div style="position:absolute;left:374.40px;top:206.29px" class="cls_015"><span class="cls_015">If the qualifying person is a child but not your dependent, enter this</span></div>
+<div style="position:absolute;left:36.00px;top:216.98px" class="cls_010"><span class="cls_010">Check only one</span></div>
+<div style="position:absolute;left:117.95px;top:217.71px" class="cls_010"><span class="cls_010">3</span></div>
+     <div style="position:absolute;left:122.00px;top:213.71px" class="cls_009"><span class="cls_009"><input type="checkbox"></span></div>
+<div style="position:absolute;left:144.00px;top:217.71px" class="cls_010"><span class="cls_010">Married filing separately. Enter spouse’s SSN above</span></div>
+<div style="position:absolute;left:374.40px;top:217.05px" class="cls_015"><span class="cls_015">child’s name here.</span><span class="cls_016">  </span><span class="cls_004">▶</span></div>
+     <div style="position:absolute;left:447.00px;top:216.50px" class="cls_027"><span class="cls_027"><input type="text" style="font-size:9pt;height:12px;width:130px;" ></span></div>
+<div style="position:absolute;left:36.00px;top:226.58px" class="cls_010"><span class="cls_010">box.</span></div>
+<div style="position:absolute;left:144.00px;top:227.71px" class="cls_010"><span class="cls_010">and full name here. </span><span class="cls_004">▶</span></div>
+     <div style="position:absolute;left:224.00px;top:226.80px" class="cls_0028"><span class="cls_0028"><input type="text" style="font-size:9pt;height:13px;width:110px;" ></span></div>
+<div style="position:absolute;left:348.35px;top:227.71px" class="cls_010"><span class="cls_010">5</span></div>
+     <div style="position:absolute;left:352.40px;top:223.35px" class="cls_017"><span class="cls_017"><input type="checkbox"></span></div>
+<div style="position:absolute;left:374.40px;top:228.35px" class="cls_017"><span class="cls_017">Qualifying widow(er) (see instructions)</span></div>
+<div style="position:absolute;left:117.95px;top:241.71px" class="cls_010"><span class="cls_010">6a</span></div>
+     <div style="position:absolute;left:129.20px;top:237.71px" class="cls_008"><span class="cls_008"><input type="checkbox"></span></div>
+<div style="position:absolute;left:151.20px;top:241.71px" class="cls_010"><span class="cls_010">Yourself. If someone can claim you as a dependent, do not check box 6a</span></div>
+<div style="position:absolute;left:489.60px;top:240.70px" class="cls_005"><span class="cls_005">Boxes checked</span></div>
+<div style="position:absolute;left:36.00px;top:244.14px" class="cls_011"><span class="cls_011">Exemptions</span></div>
+<div style="position:absolute;left:489.60px;top:247.70px" class="cls_005"><span class="cls_005">on 6a and 6b</span></div>
+<div style="position:absolute;left:475.20px;top:240.06px" class="cls_018"><span class="cls_018">}</span></div>
+<div style="position:absolute;left:122.40px;top:253.71px" class="cls_010"><span class="cls_010">b</span></div>
+     <div style="position:absolute;left:129.20px;top:249.71px" class="cls_007"><span class="cls_007"><input type="checkbox"></span></div>
+<div style="position:absolute;left:151.20px;top:253.71px" class="cls_010"><span class="cls_010">Spouse</span></div>
+<div style="position:absolute;left:489.60px;top:257.20px" class="cls_005"><span class="cls_005">No. of children</span></div>
+<div style="position:absolute;left:122.40px;top:265.51px" class="cls_010"><span class="cls_010">c  Dependents:</span></div>
+<div style="position:absolute;left:259.01px;top:266.30px" class="cls_005"><span class="cls_005">(2) Dependent’s</span></div>
+<div style="position:absolute;left:333.36px;top:266.30px" class="cls_005"><span class="cls_005">(3) Dependent’s</span></div>
+<div style="position:absolute;left:394.52px;top:264.20px" class="cls_005"><span class="cls_005">(4)</span></div>
+<div style="position:absolute;left:405.38px;top:264.20px" class="cls_019"><span class="cls_019">✓</span><span class="cls_005"> if child under age 17</span></div>
+<div style="position:absolute;left:489.60px;top:264.20px" class="cls_005"><span class="cls_005">on 6c who:</span></div>
+<div style="position:absolute;left:393.39px;top:271.20px" class="cls_005"><span class="cls_005">qualifying for child tax credit</span></div>
+<div style="position:absolute;left:489.60px;top:271.20px" class="cls_005"><span class="cls_005">• lived with you</span></div>
+<div style="position:absolute;left:250.59px;top:274.70px" class="cls_005"><span class="cls_005">social security number</span></div>
+<div style="position:absolute;left:329.61px;top:274.70px" class="cls_005"><span class="cls_005">relationship to  you</span></div>
+<div style="position:absolute;left:108.00px;top:278.00px" class="cls_005"><span class="cls_005">(1)  First name</span></div>
+<div style="position:absolute;left:188.32px;top:278.00px" class="cls_005"><span class="cls_005">Last name</span></div>
+<div style="position:absolute;left:408.02px;top:278.20px" class="cls_005"><span class="cls_005">(see instructions)</span></div>
+<div style="position:absolute;left:489.60px;top:279.79px" class="cls_020"><span class="cls_020">• did not live with</span></div>
+    <div style="position:absolute;left:107.80px;top:288.40px" class="cls_211"><spanclass="cls_211"><input type="text" style="font-size:9pt;height:11.1px;width:130px;" ></span></div>
+       <div style="position:absolute;left:238.40px;top:288.40px" class="cls_212"><spanclass="cls_212"><input type="text" style="font-size:9pt;height:11.1px;width:84px;" ></span></div>
+       <div style="position:absolute;left:322.70px;top:288.40px" class="cls_213"><spanclass="cls_213"><input type="text" style="font-size:9pt;height:11.1px;width:63.7px;" ></span></div>
+      <div style="position:absolute;left:419.00px;top:284.60px" class="cls_214"><span class="cls_214"><input type="checkbox"></span></div>
+    <div style="position:absolute;left:107.80px;top:300.40px" class="cls_221"><spanclass="cls_221"><input type="text" style="font-size:9pt;height:11.1px;width:130px;" ></span></div>
+       <div style="position:absolute;left:238.40px;top:300.40px" class="cls_2225"><spanclass="cls_222"><input type="text" style="font-size:9pt;height:11.1px;width:84px;" ></span></div>
+       <div style="position:absolute;left:322.70px;top:300.40px" class="cls_223"><spanclass="cls_223"><input type="text" style="font-size:9pt;height:11.1px;width:63.7px;" ></span></div>
+      <div style="position:absolute;left:419.00px;top:296.60px" class="cls_224"><span class="cls_224"><input type="checkbox"></span></div>
+    <div style="position:absolute;left:107.80px;top:312.40px" class="cls_231"><spanclass="cls_231"><input type="text" style="font-size:9pt;height:11.1px;width:130px;" ></span></div>
+       <div style="position:absolute;left:238.40px;top:312.40px" class="cls_232"><spanclass="cls_232"><input type="text" style="font-size:9pt;height:11.1px;width:84px;" ></span></div>
+       <div style="position:absolute;left:322.70px;top:312.40px" class="cls_233"><spanclass="cls_233"><input type="text" style="font-size:9pt;height:11.1px;width:63.7px;" ></span></div>
+      <div style="position:absolute;left:419.00px;top:308.60px" class="cls_234"><span class="cls_234"><input type="checkbox"></span></div>
+    <div style="position:absolute;left:107.80px;top:324.40px" class="cls_241"><spanclass="cls_241"><input type="text" style="font-size:9pt;height:11.1px;width:130px;" ></span></div>
+       <div style="position:absolute;left:238.40px;top:324.40px" class="cls_242"><spanclass="cls_242"><input type="text" style="font-size:9pt;height:11.1px;width:84px;" ></span></div>
+       <div style="position:absolute;left:322.70px;top:324.40px" class="cls_243"><spanclass="cls_243"><input type="text" style="font-size:9pt;height:11.1px;width:63.7px;" ></span></div>
+      <div style="position:absolute;left:419.00px;top:320.60px" class="cls_244"><span class="cls_244"><input type="checkbox"></span></div>
+<div style="position:absolute;left:489.60px;top:286.29px" class="cls_020"><span class="cls_020">you due to divorce</span></div>
+<div style="position:absolute;left:489.60px;top:292.79px" class="cls_020"><span class="cls_020">or separation</span></div>
+<div style="position:absolute;left:36.00px;top:297.18px" class="cls_010"><span class="cls_010">If more than four</span></div>
+<div style="position:absolute;left:489.60px;top:299.29px" class="cls_020"><span class="cls_020">(see instructions)</span></div>
+<div style="position:absolute;left:36.00px;top:306.78px" class="cls_010"><span class="cls_010">dependents, see</span></div>
+<div style="position:absolute;left:489.60px;top:310.44px" class="cls_020"><span class="cls_020">Dependents on 6c</span></div>
+<div style="position:absolute;left:36.00px;top:316.38px" class="cls_010"><span class="cls_010">instructions and</span></div>
+<div style="position:absolute;left:489.60px;top:316.94px" class="cls_020"><span class="cls_020">not entered above</span></div>
+<div style="position:absolute;left:36.00px;top:326.31px" class="cls_010"><span class="cls_010">check here  </span><span class="cls_004">▶</span></div>
+     <div style="position:absolute;left:80.00px;top:322.31px" class="cls_018"><span class="cls_018"><input type="checkbox"></span></div>
+<div style="position:absolute;left:489.60px;top:330.40px" class="cls_005"><span class="cls_005">Add numbers on</span></div>
+<div style="position:absolute;left:122.40px;top:336.71px" class="cls_010"><span class="cls_010">d</span></div>
+<div style="position:absolute;left:136.80px;top:336.71px" class="cls_010"><span class="cls_010">Total number of exemptions claimed</span></div>
+<div style="position:absolute;left:489.60px;top:337.94px" class="cls_005"><span class="cls_005">lines above  </span><span class="cls_004">▶</span></div>
+     <div style="position:absolute;left:555.00px;top:245.80px" class="cls_101"><span class="cls_101"><input type="text" style="font-size:9pt;height:12px;width:22px;" ></span></div>
+     <div style="position:absolute;left:555.00px;top:267.80px" class="cls_102"><span class="cls_102"><input type="text" style="font-size:9pt;height:12px;width:22px;" ></span></div>
+     <div style="position:absolute;left:555.00px;top:295.80px" class="cls_103"><span class="cls_103"><input type="text" style="font-size:9pt;height:12px;width:22px;" ></span></div>
+     <div style="position:absolute;left:555.00px;top:312.00px" class="cls_104"><span class="cls_104"><input type="text" style="font-size:9pt;height:12px;width:22px;" ></span></div>
+     <div style="position:absolute;left:556.00px;top:328.60px" class="cls_105"><span class="cls_105"><input type="text" style="font-size:9pt;height:16px;width:20px;" ></span></div>
+<div style="position:absolute;left:117.95px;top:349.71px" class="cls_010"><span class="cls_010">7</span></div>
+<div style="position:absolute;left:136.80px;top:349.71px" class="cls_010"><span class="cls_010">Wages, salaries, tips, etc. Attach Form(s) W-2</span></div>
+<div style="position:absolute;left:469.38px;top:349.71px" class="cls_010"><span class="cls_010">7</span></div>
+<div style="position:absolute;left:36.00px;top:350.57px" class="cls_006"><span class="cls_006">Income</span></div>
+<div style="position:absolute;left:117.95px;top:361.71px" class="cls_010"><span class="cls_010">8a</span></div>
+<div style="position:absolute;left:136.80px;top:361.71px" class="cls_010"><span class="cls_010">Taxable interest. Attach Schedule B if required</span></div>
+<div style="position:absolute;left:467.08px;top:361.71px" class="cls_010"><span class="cls_010">8a</span></div>
+<div style="position:absolute;left:122.40px;top:373.71px" class="cls_010"><span class="cls_010">b</span></div>
+<div style="position:absolute;left:136.80px;top:373.71px" class="cls_010"><span class="cls_010">Tax-exempt interest. Do not include on line 8a  .   .   .</span></div>
+<div style="position:absolute;left:351.73px;top:373.71px" class="cls_010"><span class="cls_010">8b</span></div>
+     <div style="position:absolute;left:368.00px;top:371.60px" class="cls_301"><span class="cls_301"><input type="text" style="font-size:9pt;height:12.5px;width:71.5px;" ></span></div>
+        <div style="position:absolute;left:440.00px;top:371.60px" class="cls_302"><span class="cls_302"><input type="text" style="font-size:9pt;height:12.5px;width:21px;" ></span></div>
+<div style="position:absolute;left:36.00px;top:381.90px" class="cls_021"><span class="cls_021">Attach Form(s)</span></div>
+<div style="position:absolute;left:117.95px;top:385.71px" class="cls_010"><span class="cls_010">9a</span></div>
+<div style="position:absolute;left:136.80px;top:385.71px" class="cls_010"><span class="cls_010">Ordinary dividends. Attach Schedule B if required</span></div>
+<div style="position:absolute;left:467.08px;top:385.71px" class="cls_010"><span class="cls_010">9a</span></div>
+<div style="position:absolute;left:36.00px;top:391.26px" class="cls_021"><span class="cls_021">W-2 here. Also</span></div>
+<div style="position:absolute;left:122.40px;top:397.71px" class="cls_010"><span class="cls_010">b</span></div>
+<div style="position:absolute;left:136.80px;top:397.71px" class="cls_010"><span class="cls_010">Qualified dividends</span></div>
+<div style="position:absolute;left:351.73px;top:397.71px" class="cls_010"><span class="cls_010">9b</span></div>
+     <div style="position:absolute;left:368.00px;top:395.60px" class="cls_303"><span class="cls_303"><input type="text" style="font-size:9pt;height:12.5px;width:71.5px;" ></span></div>
+        <div style="position:absolute;left:440.00px;top:395.60px" class="cls_304"><span class="cls_304"><input type="text" style="font-size:9pt;height:12.5px;width:21px;" ></span></div>
+<div style="position:absolute;left:36.00px;top:400.62px" class="cls_021"><span class="cls_021">attach Forms</span></div>
+<div style="position:absolute;left:36.00px;top:409.98px" class="cls_021"><span class="cls_021">W-2G and</span></div>
+<div style="position:absolute;left:113.50px;top:409.71px" class="cls_010"><span class="cls_010">10</span></div>
+<div style="position:absolute;left:136.80px;top:409.71px" class="cls_010"><span class="cls_010">Taxable refunds, credits, or offsets of state and local income taxes</span></div>
+<div style="position:absolute;left:467.15px;top:409.71px" class="cls_010"><span class="cls_010">10</span></div>
+<div style="position:absolute;left:36.00px;top:419.34px" class="cls_021"><span class="cls_021">1099-R if tax</span></div>
+<div style="position:absolute;left:113.50px;top:421.71px" class="cls_010"><span class="cls_010">11</span></div>
+<div style="position:absolute;left:136.80px;top:421.71px" class="cls_010"><span class="cls_010">Alimony received</span></div>
+<div style="position:absolute;left:467.15px;top:421.71px" class="cls_010"><span class="cls_010">11</span></div>
+<div style="position:absolute;left:36.00px;top:428.70px" class="cls_021"><span class="cls_021">was withheld.</span></div>
+<div style="position:absolute;left:113.50px;top:433.71px" class="cls_010"><span class="cls_010">12</span></div>
+<div style="position:absolute;left:136.80px;top:433.71px" class="cls_010"><span class="cls_010">Business income or (loss). Attach Schedule C or C-EZ</span></div>
+<div style="position:absolute;left:467.15px;top:433.71px" class="cls_010"><span class="cls_010">12</span></div>
+<div style="position:absolute;left:113.50px;top:445.71px" class="cls_010"><span class="cls_010">13</span></div>
+<div style="position:absolute;left:136.80px;top:445.71px" class="cls_010"><span class="cls_010">Capital gain or (loss). Attach Schedule D if required. If not required, check here  </span><span class="cls_004">▶</span></div>
+     <div style="position:absolute;left:424.80px;top:440.71px" class="cls_019"><span class="cls_019"><input type="checkbox"></span></div>
+<div style="position:absolute;left:467.15px;top:445.71px" class="cls_010"><span class="cls_010">13</span></div>
+<div style="position:absolute;left:36.00px;top:453.79px" class="cls_010"><span class="cls_010">If you did not</span></div>
+<div style="position:absolute;left:113.50px;top:457.71px" class="cls_010"><span class="cls_010">14</span></div>
+<div style="position:absolute;left:136.80px;top:457.71px" class="cls_010"><span class="cls_010">Other gains or (losses). Attach Form 4797</span></div>
+<div style="position:absolute;left:467.15px;top:457.71px" class="cls_010"><span class="cls_010">14</span></div>
+<div style="position:absolute;left:36.00px;top:463.39px" class="cls_010"><span class="cls_010">get a W-2,</span></div>
+<div style="position:absolute;left:113.50px;top:469.71px" class="cls_010"><span class="cls_010">15a</span></div>
+<div style="position:absolute;left:136.80px;top:469.71px" class="cls_010"><span class="cls_010">IRA distributions</span></div>
+<div style="position:absolute;left:227.26px;top:469.71px" class="cls_010"><span class="cls_010">15a</span></div>
+     <div style="position:absolute;left:246.00px;top:467.60px" class="cls_305"><span class="cls_305"><input type="text" style="font-size:9pt;height:12.5px;width:70.5px;" ></span></div>
+        <div style="position:absolute;left:317.50px;top:467.60px" class="cls_306"><span class="cls_306"><input type="text" style="font-size:9pt;height:12.5px;width:21px;" ></span></div>
+<div style="position:absolute;left:345.60px;top:469.71px" class="cls_010"><span class="cls_010">b  </span><span class="cls_022">Taxable amount    .   .   .</span></div>
+<div style="position:absolute;left:464.71px;top:469.71px" class="cls_010"><span class="cls_010">15b</span></div>
+<div style="position:absolute;left:36.00px;top:472.99px" class="cls_010"><span class="cls_010">see instructions.</span></div>
+<div style="position:absolute;left:113.50px;top:481.71px" class="cls_010"><span class="cls_010">16a</span></div>
+<div style="position:absolute;left:136.80px;top:481.91px" class="cls_023"><span class="cls_023">Pensions and annuities</span></div>
+<div style="position:absolute;left:227.26px;top:481.71px" class="cls_010"><span class="cls_010">16a</span></div>
+     <div style="position:absolute;left:246.00px;top:480.0px" class="cls_307"><span class="cls_307"><input type="text" style="font-size:9pt;height:12px;width:70.5px;" ></span></div>
+        <div style="position:absolute;left:317.50px;top:480.0px" class="cls_308"><span class="cls_308"><input type="text" style="font-size:9pt;height:12px;width:21px;" ></span></div>
+<div style="position:absolute;left:345.60px;top:481.71px" class="cls_010"><span class="cls_010">b  </span><span class="cls_022">Taxable amount    .   .   .</span></div>
+<div style="position:absolute;left:464.71px;top:481.71px" class="cls_010"><span class="cls_010">16b</span></div>
+<div style="position:absolute;left:113.50px;top:493.71px" class="cls_010"><span class="cls_010">17</span></div>
+<div style="position:absolute;left:136.80px;top:493.71px" class="cls_010"><span class="cls_010">Rental real estate, royalties, partnerships, S corporations, trusts, etc. Attach Schedule E</span></div>
+<div style="position:absolute;left:467.15px;top:493.71px" class="cls_024"><span class="cls_024">17</span></div>
+<div style="position:absolute;left:113.50px;top:505.71px" class="cls_010"><span class="cls_010">18</span></div>
+<div style="position:absolute;left:136.80px;top:505.71px" class="cls_010"><span class="cls_010">Farm income or (loss). Attach Schedule F</span></div>
+<div style="position:absolute;left:467.15px;top:505.71px" class="cls_010"><span class="cls_010">18</span></div>
+<div style="position:absolute;left:113.50px;top:517.71px" class="cls_010"><span class="cls_010">19</span></div>
+<div style="position:absolute;left:136.80px;top:517.71px" class="cls_010"><span class="cls_010">Unemployment compensation</span></div>
+<div style="position:absolute;left:467.15px;top:517.71px" class="cls_010"><span class="cls_010">19</span></div>
+<div style="position:absolute;left:113.50px;top:529.71px" class="cls_010"><span class="cls_010">20a</span></div>
+<div style="position:absolute;left:136.80px;top:529.91px" class="cls_023"><span class="cls_023">Social security benefits</span></div>
+<div style="position:absolute;left:227.26px;top:529.71px" class="cls_010"><span class="cls_010">20a</span></div>
+     <div style="position:absolute;left:245.50px;top:528.0px" class="cls_309"><span class="cls_309"><input type="text" style="font-size:9pt;height:12px;width:71px;" ></span></div>
+        <div style="position:absolute;left:317.50px;top:528.0px" class="cls_310"><span class="cls_310"><input type="text" style="font-size:9pt;height:12px;width:21px;" ></span></div>
+<div style="position:absolute;left:345.60px;top:529.71px" class="cls_010"><span class="cls_010">b  </span><span class="cls_022">Taxable amount    .   .   .</span></div>
+<div style="position:absolute;left:464.71px;top:529.71px" class="cls_010"><span class="cls_010">20b</span></div>
+<div style="position:absolute;left:113.50px;top:541.71px" class="cls_010"><span class="cls_010">21</span></div>
+<div style="position:absolute;left:136.80px;top:541.71px" class="cls_010"><span class="cls_010">Other income. List type and amount</span></div>
+<div style="position:absolute;left:467.15px;top:541.71px" class="cls_010"><span class="cls_010">21</span></div>
+     <div style="position:absolute;left:273.50px;top:541.50px" class="cls_311"><span class="cls_311"><input type="text" style="font-size:9pt;height:11px;width:181px;" ></span></div>
+<div style="position:absolute;left:113.50px;top:552.71px" class="cls_010"><span class="cls_010">22</span></div>
+<div style="position:absolute;left:136.80px;top:553.12px" class="cls_025"><span class="cls_025">Combine the amounts in the far right column for lines 7 through 21. This is your total income  </span><span class="cls_026">▶</span></div>
+<div style="position:absolute;left:467.15px;top:553.71px" class="cls_010"><span class="cls_010">22</span></div>
+     <div style="position:absolute;left:483.00px;top:348.60px" class="cls_312"><span class="cls_312"><input type="text" style="font-size:9pt;height:11.5px;width:72px;" ></span></div>
+        <div style="position:absolute;left:555.30px;top:348.60px" class="cls_313"><span class="cls_313"><input type="text" style="font-size:9pt;height:11.5px;width:22px;" ></span></div>
+        <!--
+     <div style="position:absolute;left:483.00px;top:360.60px" class="cls_314"><span class="cls_314"><input type="text" style="font-size:9pt;height:11.5px;width:72px;" ></span></div>
+        <div style="position:absolute;left:555.30px;top:360.60px" class="cls_315"><span class="cls_315"><input type="text" style="font-size:9pt;height:11.5px;width:22px;" ></span></div>
+        -->
+     <div style="position:absolute;left:483.00px;top:372.60px" class="cls_316"><span class="cls_316"><input type="text" style="font-size:9pt;height:23px;width:72px;" ></span></div>
+        <div style="position:absolute;left:555.30px;top:372.60px" class="cls_317"><span class="cls_317"><input type="text" style="font-size:9pt;height:23px;width:22px;" ></span></div>
+     <div style="position:absolute;left:483.00px;top:396.20px" class="cls_318"><span class="cls_318"><input type="text" style="font-size:9pt;height:24px;width:72px;" ></span></div>
+        <div style="position:absolute;left:555.30px;top:396.20px" class="cls_319"><span class="cls_319"><input type="text" style="font-size:9pt;height:24px;width:22px;" ></span></div>
+     <div style="position:absolute;left:483.00px;top:420.20px" class="cls_320"><span class="cls_320"><input type="text" style="font-size:9pt;height:12px;width:72px;" ></span></div>
+        <div style="position:absolute;left:555.30px;top:420.20px" class="cls_321"><span class="cls_321"><input type="text" style="font-size:9pt;height:12px;width:22px;" ></span></div>
+     <div style="position:absolute;left:483.00px;top:432.20px" class="cls_322"><span class="cls_322"><input type="text" style="font-size:9pt;height:12px;width:72px;" ></span></div>
+        <div style="position:absolute;left:555.30px;top:432.20px" class="cls_323"><span class="cls_323"><input type="text" style="font-size:9pt;height:12px;width:22px;" ></span></div>
+     <div style="position:absolute;left:483.00px;top:444.60px" class="cls_324"><span class="cls_324"><input type="text" style="font-size:9pt;height:11.5px;width:72px;" ></span></div>
+        <div style="position:absolute;left:555.30px;top:444.60px" class="cls_325"><span class="cls_325"><input type="text" style="font-size:9pt;height:11.5px;width:22px;" ></span></div>
+     <div style="position:absolute;left:483.00px;top:456.60px" class="cls_326"><span class="cls_326"><input type="text" style="font-size:9pt;height:11.5px;width:72px;" ></span></div>
+        <div style="position:absolute;left:555.30px;top:456.60px" class="cls_327"><span class="cls_327"><input type="text" style="font-size:9pt;height:11.5px;width:22px;" ></span></div>
+     <div style="position:absolute;left:483.00px;top:468.60px" class="cls_328"><span class="cls_328"><input type="text" style="font-size:9pt;height:11.5px;width:72px;" ></span></div>
+        <div style="position:absolute;left:555.30px;top:468.60px" class="cls_329"><span class="cls_329"><input type="text" style="font-size:9pt;height:11.5px;width:22px;" ></span></div>
+     <div style="position:absolute;left:483.00px;top:480.60px" class="cls_330"><span class="cls_330"><input type="text" style="font-size:9pt;height:11.5px;width:72px;" ></span></div>
+        <div style="position:absolute;left:555.30px;top:480.60px" class="cls_331"><span class="cls_331"><input type="text" style="font-size:9pt;height:11.5px;width:22px;" ></span></div>
+     <div style="position:absolute;left:483.00px;top:492.60px" class="cls_332"><span class="cls_332"><input type="text" style="font-size:9pt;height:11.5px;width:72px;" ></span></div>
+        <div style="position:absolute;left:555.30px;top:492.60px" class="cls_333"><span class="cls_333"><input type="text" style="font-size:9pt;height:11.5px;width:22px;" ></span></div>
+     <div style="position:absolute;left:483.00px;top:504.80px" class="cls_334"><span class="cls_334"><input type="text" style="font-size:9pt;height:11.5px;width:72px;" ></span></div>
+        <div style="position:absolute;left:555.30px;top:504.80px" class="cls_335"><span class="cls_335"><input type="text" style="font-size:9pt;height:11.5px;width:22px;" ></span></div>
+     <div style="position:absolute;left:483.00px;top:516.80px" class="cls_336"><span class="cls_336"><input type="text" style="font-size:9pt;height:11.5px;width:72px;" ></span></div>
+        <div style="position:absolute;left:555.30px;top:516.80px" class="cls_337"><span class="cls_337"><input type="text" style="font-size:9pt;height:11.5px;width:22px;" ></span></div>
+     <div style="position:absolute;left:483.00px;top:528.80px" class="cls_338"><span class="cls_338"><input type="text" style="font-size:9pt;height:11.5px;width:72px;" ></span></div>
+        <div style="position:absolute;left:555.30px;top:528.80px" class="cls_339"><span class="cls_339"><input type="text" style="font-size:9pt;height:11.5px;width:22px;" ></span></div>
+     <div style="position:absolute;left:483.00px;top:540.80px" class="cls_340"><span class="cls_340"><input type="text" style="font-size:9pt;height:11.5px;width:72px;" ></span></div>
+        <div style="position:absolute;left:555.30px;top:540.80px" class="cls_341"><span class="cls_341"><input type="text" style="font-size:9pt;height:11.5px;width:22px;" ></span></div>
+     <div style="position:absolute;left:483.00px;top:552.80px" class="cls_342"><span class="cls_342"><input type="text" style="font-size:9pt;height:11.5px;width:72px;" ></span></div>
+        <div style="position:absolute;left:555.30px;top:552.80px" class="cls_343"><span class="cls_343"><input type="text" style="font-size:9pt;height:11.5px;width:22px;" ></span></div>
+<div style="position:absolute;left:113.50px;top:565.71px" class="cls_010"><span class="cls_010">23</span></div>
+<div style="position:absolute;left:136.80px;top:565.71px" class="cls_010"><span class="cls_010">Educator expenses</span></div>
+<div style="position:absolute;left:351.95px;top:565.71px" class="cls_010"><span class="cls_010">23</span></div>
+<div style="position:absolute;left:36.00px;top:570.80px" class="cls_006"><span class="cls_006">Adjusted</span></div>
+<div style="position:absolute;left:113.50px;top:577.71px" class="cls_010"><span class="cls_010">24</span></div>
+<div style="position:absolute;left:136.80px;top:578.71px" class="cls_027"><span class="cls_027">Certain business expenses of reservists, performing artists, and</span></div>
+<div style="position:absolute;left:36.00px;top:582.80px" class="cls_006"><span class="cls_006">Gross</span></div>
+<div style="position:absolute;left:136.81px;top:589.71px" class="cls_027"><span class="cls_027">fee-basis government officials. Attach Form 2106 or 2106-EZ</span></div>
+<div style="position:absolute;left:351.95px;top:589.71px" class="cls_010"><span class="cls_010">24</span></div>
+<div style="position:absolute;left:36.00px;top:594.80px" class="cls_006"><span class="cls_006">Income</span></div>
+<div style="position:absolute;left:113.50px;top:601.71px" class="cls_010"><span class="cls_010">25</span></div>
+<div style="position:absolute;left:136.80px;top:601.71px" class="cls_010"><span class="cls_010">Health savings account deduction. Attach Form 8889</span></div>
+<div style="position:absolute;left:351.95px;top:601.71px" class="cls_010"><span class="cls_010">25</span></div>
+<div style="position:absolute;left:113.50px;top:613.71px" class="cls_010"><span class="cls_010">26</span></div>
+<div style="position:absolute;left:136.80px;top:613.71px" class="cls_010"><span class="cls_010">Moving expenses. Attach Form 3903</span></div>
+<div style="position:absolute;left:351.95px;top:613.71px" class="cls_010"><span class="cls_010">26</span></div>
+<div style="position:absolute;left:113.50px;top:625.71px" class="cls_010"><span class="cls_010">27</span></div>
+<div style="position:absolute;left:136.80px;top:626.12px" class="cls_025"><span class="cls_025">Deductible part of self-employment tax. Attach Schedule SE  .</span></div>
+<div style="position:absolute;left:351.95px;top:625.71px" class="cls_010"><span class="cls_010">27</span></div>
+<div style="position:absolute;left:113.50px;top:637.71px" class="cls_010"><span class="cls_010">28</span></div>
+<div style="position:absolute;left:136.80px;top:637.71px" class="cls_010"><span class="cls_010">Self-employed SEP, SIMPLE, and qualified plans    .   .</span></div>
+<div style="position:absolute;left:351.95px;top:637.71px" class="cls_010"><span class="cls_010">28</span></div>
+<div style="position:absolute;left:113.50px;top:649.71px" class="cls_010"><span class="cls_010">29</span></div>
+<div style="position:absolute;left:136.80px;top:649.71px" class="cls_010"><span class="cls_010">Self-employed health insurance deduction</span></div>
+<div style="position:absolute;left:351.95px;top:649.71px" class="cls_010"><span class="cls_010">29</span></div>
+<div style="position:absolute;left:113.50px;top:661.71px" class="cls_010"><span class="cls_010">30</span></div>
+<div style="position:absolute;left:136.80px;top:661.71px" class="cls_010"><span class="cls_010">Penalty on early withdrawal of savings</span></div>
+<div style="position:absolute;left:351.95px;top:661.71px" class="cls_010"><span class="cls_010">30</span></div>
+<div style="position:absolute;left:113.50px;top:673.71px" class="cls_010"><span class="cls_010">31a</span></div>
+<div style="position:absolute;left:136.80px;top:673.71px" class="cls_025"><span class="cls_025">Alimony paid </span><span class="cls_010">  b  Recipient’s SSN </span><span class="cls_005"> </span><span class="cls_004">▶</span></div>
+<div style="position:absolute;left:349.66px;top:673.71px" class="cls_010"><span class="cls_010">31a</span></div>
+      <div style="position:absolute;left:266.00px;top:673.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:23.8px;" ></span></div>
+      <div style="position:absolute;left:290.50px;top:673.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:14.3px;" ></span></div>
+      <div style="position:absolute;left:305.50px;top:673.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:33px;" ></span></div>
+<div style="position:absolute;left:113.50px;top:685.71px" class="cls_010"><span class="cls_010">32</span></div>
+<div style="position:absolute;left:136.80px;top:685.71px" class="cls_010"><span class="cls_010">IRA deduction</span></div>
+<div style="position:absolute;left:351.95px;top:685.71px" class="cls_010"><span class="cls_010">32</span></div>
+<div style="position:absolute;left:113.50px;top:697.71px" class="cls_010"><span class="cls_010">33</span></div>
+<div style="position:absolute;left:136.80px;top:697.71px" class="cls_010"><span class="cls_010">Student loan interest deduction</span></div>
+<div style="position:absolute;left:351.95px;top:697.71px" class="cls_010"><span class="cls_010">33</span></div>
+<div style="position:absolute;left:113.50px;top:709.71px" class="cls_010"><span class="cls_010">34</span></div>
+<div style="position:absolute;left:136.80px;top:709.71px" class="cls_010"><span class="cls_010">Tuition and fees. Attach Form 8917</span></div>
+<div style="position:absolute;left:351.95px;top:709.71px" class="cls_010"><span class="cls_010">34</span></div>
+<div style="position:absolute;left:113.50px;top:721.71px" class="cls_010"><span class="cls_010">35</span></div>
+<div style="position:absolute;left:136.80px;top:722.04px" class="cls_022"><span class="cls_022">Domestic production activities deduction. Attach Form 8903</span></div>
+<div style="position:absolute;left:351.95px;top:721.71px" class="cls_010"><span class="cls_010">35</span></div>
+     <div style="position:absolute;left:368.00px;top:565.0px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:71px;" ></span></div>
+        <div style="position:absolute;left:440.00px;top:565.0px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:21px;" ></span></div>
+     <div style="position:absolute;left:368.00px;top:576.50px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:24px;width:71px;" ></span></div>
+        <div style="position:absolute;left:440.00px;top:576.50px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:24px;width:21px;" ></span></div>
+     <div style="position:absolute;left:368.00px;top:601.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11.5px;width:71px;" ></span></div>
+        <div style="position:absolute;left:440.00px;top:601.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11.5px;width:21px;" ></span></div>
+     <div style="position:absolute;left:368.00px;top:613.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11.5px;width:71px;" ></span></div>
+        <div style="position:absolute;left:440.00px;top:613.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11.5px;width:21px;" ></span></div>
+     <div style="position:absolute;left:368.00px;top:625.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11.5px;width:71px;" ></span></div>
+        <div style="position:absolute;left:440.00px;top:625.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11.5px;width:21px;" ></span></div>
+     <div style="position:absolute;left:368.00px;top:637.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11.5px;width:71px;" ></span></div>
+        <div style="position:absolute;left:440.00px;top:637.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11.5px;width:21px;" ></span></div>
+     <div style="position:absolute;left:368.00px;top:649.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11.5px;width:71px;" ></span></div>
+        <div style="position:absolute;left:440.00px;top:649.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11.5px;width:21px;" ></span></div>
+     <div style="position:absolute;left:368.00px;top:661.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11.5px;width:71px;" ></span></div>
+        <div style="position:absolute;left:440.00px;top:661.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11.5px;width:21px;" ></span></div>
+     <div style="position:absolute;left:368.00px;top:673.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11.5px;width:71px;" ></span></div>
+        <div style="position:absolute;left:440.00px;top:673.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11.5px;width:21px;" ></span></div>
+     <div style="position:absolute;left:368.00px;top:685.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11.5px;width:71px;" ></span></div>
+        <div style="position:absolute;left:440.00px;top:685.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11.5px;width:21px;" ></span></div>
+     <div style="position:absolute;left:368.00px;top:697.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11.5px;width:71px;" ></span></div>
+        <div style="position:absolute;left:440.00px;top:697.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11.5px;width:21px;" ></span></div>
+     <div style="position:absolute;left:368.00px;top:709.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11.5px;width:71px;" ></span></div>
+        <div style="position:absolute;left:440.00px;top:709.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11.5px;width:21px;" ></span></div>
+     <div style="position:absolute;left:368.00px;top:721.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11.5px;width:71px;" ></span></div>
+        <div style="position:absolute;left:440.00px;top:721.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11.5px;width:21px;" ></span></div>
+<div style="position:absolute;left:113.50px;top:733.71px" class="cls_010"><span class="cls_010">36</span></div>
+<div style="position:absolute;left:136.80px;top:733.71px" class="cls_010"><span class="cls_010">Add lines 23 through 35</span></div>
+<div style="position:absolute;left:467.15px;top:733.71px" class="cls_010"><span class="cls_010">36</span></div>
+<div style="position:absolute;left:113.50px;top:744.71px" class="cls_010"><span class="cls_010">37</span></div>
+<div style="position:absolute;left:136.80px;top:744.71px" class="cls_010"><span class="cls_010">Subtract line 36 from line 22. This is your adjusted gross income</span></div>
+<div style="position:absolute;left:444.44px;top:745.21px" class="cls_004"><span class="cls_004">▶</span></div>
+<div style="position:absolute;left:467.15px;top:745.71px" class="cls_010"><span class="cls_010">37</span></div>
+     <div style="position:absolute;left:483.50px;top:733.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11.5px;width:71px;" ></span></div>
+        <div style="position:absolute;left:555.50px;top:733.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11.5px;width:21px;" ></span></div>
+     <div style="position:absolute;left:483.50px;top:745.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:71px;" ></span></div>
+        <div style="position:absolute;left:555.50px;top:745.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:21px;" ></span></div>
+<div style="position:absolute;left:36.00px;top:757.71px" class="cls_010"><span class="cls_010">For Disclosure, Privacy Act, and Paperwork Reduction Act Notice, see separate instructions.</span></div>
+<div style="position:absolute;left:420.34px;top:759.00px" class="cls_005"><span class="cls_005">Cat. No. 11320B</span></div>
+<div style="position:absolute;left:513.50px;top:755.14px" class="cls_005"><span class="cls_005">Form </span><span class="cls_011">1040 </span><span class="cls_005">(2017)</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:802px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="1040_background2.jpg" width=612 height=792></div>
+<div style="position:absolute;left:36.00px;top:24.79px" class="cls_028"><span class="cls_028">Form 1040 (2017)</span></div>
+<div style="position:absolute;left:551.30px;top:22.14px" class="cls_005"><span class="cls_005">Page </span><span class="cls_011">2</span></div>
+<div style="position:absolute;left:91.90px;top:37.71px" class="cls_010"><span class="cls_010">38</span></div>
+<div style="position:absolute;left:115.20px;top:37.71px" class="cls_010"><span class="cls_010">Amount from line 37 (adjusted gross income)</span></div>
+<div style="position:absolute;left:467.15px;top:37.71px" class="cls_010"><span class="cls_010">38</span></div>
+     <div style="position:absolute;left:483.50px;top:37.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:71px;" ></span></div>
+        <div style="position:absolute;left:555.50px;top:37.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:21px;" ></span></div>
+<div style="position:absolute;left:91.90px;top:49.71px" class="cls_010"><span class="cls_010">39a</span></div>
+        <div style="position:absolute;left:440.50px;top:48.50px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:12pt;height:22px;width:20px;" ></span></div>
+<div style="position:absolute;left:115.20px;top:50.71px" class="cls_010"><span class="cls_010">Check</span></div>
+     <div style="position:absolute;left:144.00px;top:43.71px" class="cls_006"><span class="cls_006"><input type="checkbox"></span></div>
+<div style="position:absolute;left:166.00px;top:49.71px" class="cls_010"><span class="cls_010">You were born before January 2, 1953,</span></div>
+     <div style="position:absolute;left:323.20px;top:43.71px" class="cls_004"><span class="cls_004"><input type="checkbox"></span></div>
+<div style="position:absolute;left:345.20px;top:49.71px" class="cls_010"><span class="cls_010">Blind.</span></div>
+<div style="position:absolute;left:36.00px;top:52.34px" class="cls_011"><span class="cls_011">Tax and</span></div>
+<div style="position:absolute;left:140.80px;top:47.63px" class="cls_018"><span class="cls_018">{</span></div>
+<div style="position:absolute;left:367.20px;top:47.42px" class="cls_018"><span class="cls_018">}</span><span class="cls_025">Total boxes</span></div>
+<div style="position:absolute;left:115.20px;top:61.71px" class="cls_010"><span class="cls_010">if:</span></div>
+     <div style="position:absolute;left:144.00px;top:55.71px" class="cls_005"><span class="cls_005"><input type="checkbox"></span></div>
+<div style="position:absolute;left:166.00px;top:61.71px" class="cls_010"><span class="cls_010">Spouse was born before January 2, 1953,</span></div>
+     <div style="position:absolute;left:323.20px;top:55.71px" class="cls_003"><span class="cls_003"><input type="checkbox"></span></div>
+<div style="position:absolute;left:345.20px;top:61.71px" class="cls_010"><span class="cls_010">Blind.</span></div>
+<div style="position:absolute;left:374.40px;top:61.71px" class="cls_025"><span class="cls_025">checked</span><span class="cls_028"> </span><span class="cls_004"> ▶</span><span class="cls_010">  39a</span></div>
+<div style="position:absolute;left:36.00px;top:63.77px" class="cls_011"><span class="cls_011">Credits</span></div>
+<div style="position:absolute;left:100.80px;top:73.71px" class="cls_010"><span class="cls_010">b</span></div>
+<div style="position:absolute;left:115.20px;top:73.13px" class="cls_029"><span class="cls_029">If your spouse itemizes on a separate return or you were a dual-status alien,  check here</span><span class="cls_030"> ▶</span></div>
+     <div style="position:absolute;left:440.00px;top:69.71px" class="cls_002"><span class="cls_002"><input type="checkbox"></span></div>
+<div style="position:absolute;left:444.00px;top:73.71px" class="cls_010"><span class="cls_010">39b</span></div>
+
+<div style="position:absolute;left:36.00px;top:86.86px" class="cls_017"><span class="cls_017">Standard</span></div>
+<div style="position:absolute;left:91.90px;top:85.71px" class="cls_049"><span class="cls_049">40</span></div>
+     <div style="position:absolute;left:483.50px;top:85.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:71px;" ></span></div>
+        <div style="position:absolute;left:555.50px;top:85.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:21px;" ></span></div>
+<div style="position:absolute;left:115.20px;top:85.71px" class="cls_010"><span class="cls_010">Itemized deductions (from Schedule A) or your standard deduction (see left margin)   .   .</span></div>
+<div style="position:absolute;left:467.15px;top:85.71px" class="cls_010"><span class="cls_010">40</span></div>
+<div style="position:absolute;left:36.00px;top:93.86px" class="cls_017"><span class="cls_017">Deduction</span></div>
+<div style="position:absolute;left:91.90px;top:97.71px" class="cls_010"><span class="cls_010">41</span></div>
+     <div style="position:absolute;left:483.50px;top:97.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:71px;" ></span></div>
+        <div style="position:absolute;left:555.50px;top:97.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:21px;" ></span></div>
+<div style="position:absolute;left:115.20px;top:97.71px" class="cls_010"><span class="cls_010">Subtract line 40 from line 38</span></div>
+<div style="position:absolute;left:467.15px;top:97.71px" class="cls_010"><span class="cls_010">41</span></div>
+<div style="position:absolute;left:36.00px;top:100.85px" class="cls_017"><span class="cls_017">for—</span></div>
+<div style="position:absolute;left:36.00px;top:110.85px" class="cls_017"><span class="cls_017">• People who</span></div>
+<div style="position:absolute;left:91.90px;top:109.71px" class="cls_010"><span class="cls_010">42</span></div>
+<div style="position:absolute;left:115.20px;top:109.71px" class="cls_010"><span class="cls_010">Exemptions. </span><span class="cls_031">If line 38 is $156,900 or less, multiply $4,050 by the number on line 6d. Otherwise, see instructions</span></div>
+<div style="position:absolute;left:467.15px;top:109.71px" class="cls_010"><span class="cls_010">42</span></div>
+     <div style="position:absolute;left:483.50px;top:108.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:71px;" ></span></div>
+        <div style="position:absolute;left:555.50px;top:108.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:21px;" ></span></div>
+<div style="position:absolute;left:36.00px;top:117.85px" class="cls_017"><span class="cls_017">check any</span></div>
+<div style="position:absolute;left:91.90px;top:121.71px" class="cls_010"><span class="cls_010">43</span></div>
+<div style="position:absolute;left:115.20px;top:121.71px" class="cls_010"><span class="cls_010">Taxable income.  Subtract line 42 from line 41. If line 42 is more than line 41, enter -0-</span></div>
+<div style="position:absolute;left:467.15px;top:121.71px" class="cls_010"><span class="cls_010">43</span></div>
+     <div style="position:absolute;left:483.50px;top:120.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:71px;" ></span></div>
+        <div style="position:absolute;left:555.50px;top:120.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:21px;" ></span></div>
+<div style="position:absolute;left:36.00px;top:124.85px" class="cls_017"><span class="cls_017">box on line</span></div>
+<div style="position:absolute;left:36.00px;top:131.84px" class="cls_017"><span class="cls_017">39a or 39b or</span></div>
+<div style="position:absolute;left:91.90px;top:133.71px" class="cls_010"><span class="cls_010">44</span></div>
+     <div style="position:absolute;left:483.50px;top:132.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:71px;" ></span></div>
+        <div style="position:absolute;left:555.50px;top:132.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:21px;" ></span></div>
+<div style="position:absolute;left:115.20px;top:133.71px" class="cls_025"><span class="cls_025">Tax  (see instructions). Check if any from:</span><span class="cls_010">a</span></div>
+     <div style="position:absolute;left:254.20px;top:129.71px" class="cls_025"><span class="cls_025"><input type="checkbox"></span></div>
+<div style="position:absolute;left:272.51px;top:133.71px" class="cls_010"><span class="cls_010">Form(s) 8814    b</span></div>
+     <div style="position:absolute;left:329.51px;top:129.71px" class="cls_024"><span class="cls_024"><input type="checkbox"></span></div>
+<div style="position:absolute;left:351.25px;top:133.71px" class="cls_010"><span class="cls_010">Form 4972</span></div>
+<div style="position:absolute;left:396.00px;top:133.71px" class="cls_010"><span class="cls_010">c</span></div>
+     <div style="position:absolute;left:398.00px;top:129.71px" class="cls_026"><span class="cls_026"><input type="checkbox"></span></div>
+     <div style="position:absolute;left:418.50px;top:132.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:35px;" ></span></div>
+<div style="position:absolute;left:467.15px;top:133.71px" class="cls_010"><span class="cls_010">44</span></div>
+<div style="position:absolute;left:36.00px;top:138.84px" class="cls_017"><span class="cls_017">who can be</span></div>
+<div style="position:absolute;left:36.00px;top:145.84px" class="cls_017"><span class="cls_017">claimed as a</span></div>
+<div style="position:absolute;left:91.90px;top:145.71px" class="cls_010"><span class="cls_010">45</span></div>
+<div style="position:absolute;left:115.20px;top:145.71px" class="cls_010"><span class="cls_010">Alternative minimum tax  (see instructions). Attach Form 6251</span></div>
+<div style="position:absolute;left:467.15px;top:145.71px" class="cls_010"><span class="cls_010">45</span></div>
+     <div style="position:absolute;left:483.50px;top:144.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:71px;" ></span></div>
+        <div style="position:absolute;left:555.50px;top:144.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:21px;" ></span></div>
+<div style="position:absolute;left:36.00px;top:152.84px" class="cls_017"><span class="cls_017">dependent,</span></div>
+<div style="position:absolute;left:36.00px;top:159.83px" class="cls_017"><span class="cls_017">see</span></div>
+<div style="position:absolute;left:91.90px;top:157.71px" class="cls_010"><span class="cls_010">46</span></div>
+<div style="position:absolute;left:115.20px;top:157.71px" class="cls_010"><span class="cls_010">Excess advance premium tax credit repayment. Attach Form 8962</span></div>
+<div style="position:absolute;left:467.15px;top:157.71px" class="cls_010"><span class="cls_010">46</span></div>
+     <div style="position:absolute;left:483.50px;top:156.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:71px;" ></span></div>
+        <div style="position:absolute;left:555.50px;top:156.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:21px;" ></span></div>
+<div style="position:absolute;left:36.00px;top:166.83px" class="cls_017"><span class="cls_017">instructions.</span></div>
+<div style="position:absolute;left:91.90px;top:169.71px" class="cls_010"><span class="cls_010">47</span></div>
+     <div style="position:absolute;left:483.50px;top:168.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:71px;" ></span></div>
+        <div style="position:absolute;left:555.50px;top:168.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:21px;" ></span></div>
+<div style="position:absolute;left:115.20px;top:169.71px" class="cls_010"><span class="cls_010">Add lines 44, 45, and 46</span></div>
+<div style="position:absolute;left:447.26px;top:170.21px" class="cls_004"><span class="cls_004">▶</span></div>
+<div style="position:absolute;left:467.15px;top:169.71px" class="cls_010"><span class="cls_010">47</span></div>
+<div style="position:absolute;left:36.00px;top:176.83px" class="cls_017"><span class="cls_017">• All others:</span></div>
+<div style="position:absolute;left:91.90px;top:181.71px" class="cls_010"><span class="cls_010">48</span></div>
+<div style="position:absolute;left:115.19px;top:181.71px" class="cls_010"><span class="cls_010">Foreign tax credit. Attach Form 1116 if required</span></div>
+<div style="position:absolute;left:351.95px;top:181.71px" class="cls_010"><span class="cls_010">48</span></div>
+<div style="position:absolute;left:36.00px;top:186.83px" class="cls_017"><span class="cls_017">Single or</span></div>
+<div style="position:absolute;left:36.00px;top:193.82px" class="cls_017"><span class="cls_017">Married filing</span></div>
+<div style="position:absolute;left:91.90px;top:193.72px" class="cls_010"><span class="cls_010">49</span></div>
+<div style="position:absolute;left:115.19px;top:194.36px" class="cls_017"><span class="cls_017">Credit for child and dependent care expenses. Attach Form 2441</span></div>
+<div style="position:absolute;left:351.95px;top:193.72px" class="cls_010"><span class="cls_010">49</span></div>
+<div style="position:absolute;left:36.00px;top:200.82px" class="cls_017"><span class="cls_017">separately,</span></div>
+<div style="position:absolute;left:36.00px;top:207.82px" class="cls_017"><span class="cls_017">$6,350</span></div>
+<div style="position:absolute;left:91.90px;top:205.71px" class="cls_010"><span class="cls_010">50</span></div>
+<div style="position:absolute;left:115.19px;top:205.71px" class="cls_010"><span class="cls_010">Education credits from Form 8863, line 19</span></div>
+<div style="position:absolute;left:351.95px;top:205.71px" class="cls_010"><span class="cls_010">50</span></div>
+<div style="position:absolute;left:36.00px;top:217.82px" class="cls_017"><span class="cls_017">Married filing</span></div>
+<div style="position:absolute;left:91.90px;top:217.71px" class="cls_010"><span class="cls_010">51</span></div>
+<div style="position:absolute;left:115.19px;top:217.52px" class="cls_032"><span class="cls_032">Retirement savings contributions credit. Attach Form 8880</span></div>
+<div style="position:absolute;left:351.95px;top:217.71px" class="cls_010"><span class="cls_010">51</span></div>
+<div style="position:absolute;left:36.00px;top:224.81px" class="cls_017"><span class="cls_017">jointly or</span></div>
+<div style="position:absolute;left:36.00px;top:231.81px" class="cls_017"><span class="cls_017">Qualifying</span></div>
+<div style="position:absolute;left:91.90px;top:229.72px" class="cls_010"><span class="cls_010">52</span></div>
+<div style="position:absolute;left:115.19px;top:229.52px" class="cls_033"><span class="cls_033">Child tax credit. Attach Schedule 8812, if required</span><span class="cls_032"> .   .   .</span></div>
+<div style="position:absolute;left:351.95px;top:229.72px" class="cls_010"><span class="cls_010">52</span></div>
+<div style="position:absolute;left:36.00px;top:238.81px" class="cls_017"><span class="cls_017">widow(er),</span></div>
+<div style="position:absolute;left:91.90px;top:241.71px" class="cls_010"><span class="cls_010">53</span></div>
+<div style="position:absolute;left:115.19px;top:241.71px" class="cls_010"><span class="cls_010">Residential energy credits. Attach Form 5695</span></div>
+<div style="position:absolute;left:351.95px;top:241.71px" class="cls_010"><span class="cls_010">53</span></div>
+<div style="position:absolute;left:36.00px;top:245.81px" class="cls_017"><span class="cls_017">$12,700</span></div>
+<div style="position:absolute;left:36.00px;top:255.80px" class="cls_017"><span class="cls_017">Head of</span></div>
+<div style="position:absolute;left:91.90px;top:253.71px" class="cls_010"><span class="cls_010">54</span></div>
+<div style="position:absolute;left:115.47px;top:253.71px" class="cls_034"><span class="cls_034">Other credits from Form:</span><span class="cls_010">a</span></div>
+     <div style="position:absolute;left:197.47px;top:248.71px" class="cls_034"><span class="cls_034"><input type="checkbox"></span></div>
+<div style="position:absolute;left:215.60px;top:253.31px" class="cls_010"><span class="cls_010">3800 b</span></div>
+     <div style="position:absolute;left:239.60px;top:248.31px" class="cls_035"><span class="cls_035"><input type="checkbox"></span></div>
+<div style="position:absolute;left:258.80px;top:253.31px" class="cls_010"><span class="cls_010">8801    c</span></div>
+     <div style="position:absolute;left:281.80px;top:248.31px" class="cls_036"><span class="cls_036"><input type="checkbox"></span></div>
+<div style="position:absolute;left:351.95px;top:253.71px" class="cls_010"><span class="cls_010">54</span></div>
+     <div style="position:absolute;left:368.50px;top:180.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:71px;" ></span></div>
+        <div style="position:absolute;left:440.50px;top:180.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:20px;" ></span></div>
+     <div style="position:absolute;left:368.50px;top:192.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:71px;" ></span></div>
+        <div style="position:absolute;left:440.50px;top:192.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:20px;" ></span></div>
+     <div style="position:absolute;left:368.50px;top:204.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:71px;" ></span></div>
+        <div style="position:absolute;left:440.50px;top:204.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:20px;" ></span></div>
+     <div style="position:absolute;left:368.50px;top:216.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:71px;" ></span></div>
+        <div style="position:absolute;left:440.50px;top:216.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:20px;" ></span></div>
+     <div style="position:absolute;left:368.50px;top:228.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:71px;" ></span></div>
+        <div style="position:absolute;left:440.50px;top:228.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:20px;" ></span></div>
+     <div style="position:absolute;left:368.50px;top:240.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:71px;" ></span></div>
+        <div style="position:absolute;left:440.50px;top:240.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:20px;" ></span></div>
+     <div style="position:absolute;left:368.50px;top:252.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:71px;" ></span></div>
+        <div style="position:absolute;left:440.50px;top:252.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:20px;" ></span></div>
+      <div style="position:absolute;left:310.00px;top:252.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:29px;" ></span></div>
+<div style="position:absolute;left:36.00px;top:262.80px" class="cls_017"><span class="cls_017">household,</span></div>
+<div style="position:absolute;left:91.90px;top:265.71px" class="cls_010"><span class="cls_010">55</span></div>
+<div style="position:absolute;left:115.20px;top:265.71px" class="cls_010"><span class="cls_010">Add lines 48 through 54. These are your total credits</span></div>
+<div style="position:absolute;left:467.15px;top:265.72px" class="cls_010"><span class="cls_010">55</span></div>
+<div style="position:absolute;left:36.00px;top:269.80px" class="cls_017"><span class="cls_017">$9,350</span></div>
+<div style="position:absolute;left:91.90px;top:277.71px" class="cls_010"><span class="cls_010">56</span></div>
+<div style="position:absolute;left:115.20px;top:276.71px" class="cls_010"><span class="cls_010">Subtract line 55 from line 47. If line 55 is more than line 47, enter -0-</span></div>
+<div style="position:absolute;left:447.26px;top:277.21px" class="cls_004"><span class="cls_004">▶</span></div>
+<div style="position:absolute;left:467.15px;top:277.71px" class="cls_010"><span class="cls_010">56</span></div>
+<div style="position:absolute;left:91.90px;top:289.71px" class="cls_010"><span class="cls_010">57</span></div>
+<div style="position:absolute;left:115.20px;top:289.71px" class="cls_010"><span class="cls_010">Self-employment tax. Attach Schedule SE</span></div>
+<div style="position:absolute;left:467.15px;top:289.71px" class="cls_010"><span class="cls_010">57</span></div>
+<div style="position:absolute;left:91.90px;top:301.71px" class="cls_010"><span class="cls_010">58</span></div>
+<div style="position:absolute;left:115.20px;top:301.71px" class="cls_010"><span class="cls_010">Unreported social security and Medicare tax from Form:   a</span></div>
+     <div style="position:absolute;left:321.20px;top:297.71px" class="cls_027"><span class="cls_027"><input type="checkbox"></span></div>
+<div style="position:absolute;left:345.20px;top:301.71px" class="cls_010"><span class="cls_010">4137</span></div>
+<div style="position:absolute;left:381.60px;top:301.71px" class="cls_010"><span class="cls_010">b</span></div>
+     <div style="position:absolute;left:384.20px;top:297.71px" class="cls_028"><span class="cls_028"><input type="checkbox"></span></div>
+<div style="position:absolute;left:402.80px;top:301.71px" class="cls_010"><span class="cls_010">8919</span></div>
+<div style="position:absolute;left:467.15px;top:301.71px" class="cls_010"><span class="cls_010">58</span></div>
+<div style="position:absolute;left:36.00px;top:301.47px" class="cls_006"><span class="cls_006">Other</span></div>
+<div style="position:absolute;left:91.90px;top:313.71px" class="cls_010"><span class="cls_010">59</span></div>
+<div style="position:absolute;left:115.20px;top:314.10px" class="cls_035"><span class="cls_035">Additional tax on IRAs, other qualified retirement plans, etc. Attach Form 5329 if required</span></div>
+<div style="position:absolute;left:467.15px;top:313.71px" class="cls_010"><span class="cls_010">59</span></div>
+<div style="position:absolute;left:36.00px;top:315.87px" class="cls_006"><span class="cls_006">Taxes</span></div>
+<div style="position:absolute;left:91.90px;top:325.71px" class="cls_010"><span class="cls_010">60a</span></div>
+<div style="position:absolute;left:115.20px;top:325.71px" class="cls_035"><span class="cls_035">Household employment taxes from Schedule H</span></div>
+<div style="position:absolute;left:464.86px;top:325.71px" class="cls_010"><span class="cls_010">60a</span></div>
+<div style="position:absolute;left:100.80px;top:337.71px" class="cls_010"><span class="cls_010">b</span></div>
+<div style="position:absolute;left:115.20px;top:337.71px" class="cls_035"><span class="cls_035">First-time homebuyer credit repayment. Attach Form 5405 if required</span></div>
+<div style="position:absolute;left:464.71px;top:337.71px" class="cls_010"><span class="cls_010">60b</span></div>
+<div style="position:absolute;left:91.90px;top:349.71px" class="cls_010"><span class="cls_010">61</span></div>
+<div style="position:absolute;left:115.20px;top:349.71px" class="cls_035"><span class="cls_035">Health care: individual responsibility (see instructions)</span><span class="cls_010">   Full-year coverage</span></div>
+     <div style="position:absolute;left:365.20px;top:345.71px" class="cls_029"><span class="cls_029"><input type="checkbox"></span></div>
+<div style="position:absolute;left:467.15px;top:349.71px" class="cls_010"><span class="cls_010">61</span></div>
+<div style="position:absolute;left:91.90px;top:361.71px" class="cls_010"><span class="cls_010">62</span></div>
+<div style="position:absolute;left:115.20px;top:361.71px" class="cls_010"><span class="cls_010">Taxes from:  a</span></div>
+     <div style="position:absolute;left:163.20px;top:357.71px" class="cls_010"><span class="cls_010"><input type="checkbox"></span></div>
+<div style="position:absolute;left:185.20px;top:362.12px" class="cls_030"><span class="cls_030">Form 8959</span></div>
+<div style="position:absolute;left:230.40px;top:361.71px" class="cls_010"><span class="cls_010">b</span></div>
+     <div style="position:absolute;left:232.40px;top:357.71px" class="cls_031"><span class="cls_031"><input type="checkbox"></span></div>
+<div style="position:absolute;left:250.44px;top:362.12px" class="cls_025"><span class="cls_025">Form 8960</span></div>
+<div style="position:absolute;left:295.20px;top:361.71px" class="cls_010"><span class="cls_010">c</span></div>
+     <div style="position:absolute;left:297.20px;top:357.71px" class="cls_032"><span class="cls_032"><input type="checkbox"></span></div>
+<div style="position:absolute;left:315.71px;top:361.71px" class="cls_010"><span class="cls_010">Instructions;  enter code(s)</span></div>
+<div style="position:absolute;left:467.15px;top:361.71px" class="cls_010"><span class="cls_010">62</span></div>
+<div style="position:absolute;left:91.90px;top:373.71px" class="cls_010"><span class="cls_010">63</span></div>
+<div style="position:absolute;left:115.20px;top:373.71px" class="cls_010"><span class="cls_010">Add lines 56 through 62. This is your total tax</span></div>
+<div style="position:absolute;left:446.66px;top:374.21px" class="cls_004"><span class="cls_004">▶</span></div>
+<div style="position:absolute;left:467.15px;top:373.71px" class="cls_010"><span class="cls_010">63</span></div>
+     <div style="position:absolute;left:483.50px;top:264.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:71px;" ></span></div>
+        <div style="position:absolute;left:555.50px;top:264.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:21px;" ></span></div>
+     <div style="position:absolute;left:483.50px;top:276.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:71px;" ></span></div>
+        <div style="position:absolute;left:555.50px;top:276.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:21px;" ></span></div>
+     <div style="position:absolute;left:483.50px;top:288.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:71px;" ></span></div>
+        <div style="position:absolute;left:555.50px;top:288.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:21px;" ></span></div>
+     <div style="position:absolute;left:483.50px;top:300.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:71px;" ></span></div>
+        <div style="position:absolute;left:555.50px;top:300.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:21px;" ></span></div>
+     <div style="position:absolute;left:483.50px;top:312.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:71px;" ></span></div>
+        <div style="position:absolute;left:555.50px;top:312.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:21px;" ></span></div>
+     <div style="position:absolute;left:483.50px;top:324.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:71px;" ></span></div>
+        <div style="position:absolute;left:555.50px;top:324.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:21px;" ></span></div>
+     <div style="position:absolute;left:483.50px;top:336.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:71px;" ></span></div>
+        <div style="position:absolute;left:555.50px;top:336.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:21px;" ></span></div>
+     <div style="position:absolute;left:483.50px;top:348.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:71px;" ></span></div>
+        <div style="position:absolute;left:555.50px;top:348.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:21px;" ></span></div>
+     <div style="position:absolute;left:483.50px;top:360.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:71px;" ></span></div>
+        <div style="position:absolute;left:555.50px;top:360.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:21px;" ></span></div>
+     <div style="position:absolute;left:483.50px;top:372.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:71px;" ></span></div>
+        <div style="position:absolute;left:555.50px;top:372.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:21px;" ></span></div>
+     <div style="position:absolute;left:418.50px;top:360.70px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:36px;" ></span></div>
+<div style="position:absolute;left:36.00px;top:385.14px" class="cls_011"><span class="cls_011">Payments</span></div>
+<div style="position:absolute;left:91.90px;top:385.71px" class="cls_010"><span class="cls_010">64</span></div>
+<div style="position:absolute;left:115.20px;top:385.71px" class="cls_010"><span class="cls_010">Federal income tax withheld from Forms W-2 and 1099    .   .</span></div>
+<div style="position:absolute;left:351.95px;top:385.71px" class="cls_010"><span class="cls_010">64</span></div>
+<div style="position:absolute;left:91.90px;top:397.71px" class="cls_049"><span class="cls_049">65</span></div>
+<div style="position:absolute;left:115.20px;top:398.04px" class="cls_022"><span class="cls_022">2017 estimated tax payments and amount applied from 2016 return</span></div>
+<div style="position:absolute;left:351.95px;top:397.71px" class="cls_010"><span class="cls_010">65</span></div>
+<div style="position:absolute;left:36.00px;top:406.21px" class="cls_017"><span class="cls_017">If you have a</span></div>
+<div style="position:absolute;left:91.90px;top:409.71px" class="cls_049"><span class="cls_049">66</span><span class="cls_010">a</span></div>
+<div style="position:absolute;left:115.20px;top:409.71px" class="cls_010"><span class="cls_010">Earned income credit (EIC)</span></div>
+<div style="position:absolute;left:349.66px;top:409.71px" class="cls_010"><span class="cls_010">66a</span></div>
+<div style="position:absolute;left:36.00px;top:415.21px" class="cls_017"><span class="cls_017">qualifying</span></div>
+<div style="position:absolute;left:36.00px;top:424.21px" class="cls_017"><span class="cls_017">child, attach</span></div>
+<div style="position:absolute;left:100.80px;top:421.71px" class="cls_010"><span class="cls_010">b</span></div>
+<div style="position:absolute;left:115.20px;top:422.12px" class="cls_025"><span class="cls_025">Nontaxable combat pay election</span></div>
+<div style="position:absolute;left:234.31px;top:421.71px" class="cls_010"><span class="cls_010">66b</span></div>
+<div style="position:absolute;left:36.00px;top:433.21px" class="cls_017"><span class="cls_017">Schedule EIC.</span></div>
+<div style="position:absolute;left:91.90px;top:433.78px" class="cls_010"><span class="cls_010">67</span></div>
+<div style="position:absolute;left:115.19px;top:433.91px" class="cls_023"><span class="cls_023">Additional child tax credit. Attach Schedule 8812</span></div>
+<div style="position:absolute;left:351.95px;top:433.71px" class="cls_010"><span class="cls_010">67</span></div>
+<div style="position:absolute;left:91.90px;top:445.77px" class="cls_010"><span class="cls_010">68</span></div>
+<div style="position:absolute;left:115.20px;top:445.55px" class="cls_036"><span class="cls_036">American opportunity credit from Form 8863, line 8  .   .   .</span></div>
+<div style="position:absolute;left:351.95px;top:445.77px" class="cls_010"><span class="cls_010">68</span></div>
+<div style="position:absolute;left:91.90px;top:457.77px" class="cls_010"><span class="cls_010">69</span></div>
+<div style="position:absolute;left:115.20px;top:457.55px" class="cls_036"><span class="cls_036">Net premium tax credit. Attach Form 8962</span></div>
+<div style="position:absolute;left:351.95px;top:457.77px" class="cls_010"><span class="cls_010">69</span></div>
+<div style="position:absolute;left:91.90px;top:469.72px" class="cls_010"><span class="cls_010">70</span></div>
+<div style="position:absolute;left:115.20px;top:469.71px" class="cls_010"><span class="cls_010">Amount paid with request for extension to file</span></div>
+<div style="position:absolute;left:351.95px;top:469.71px" class="cls_010"><span class="cls_010">70</span></div>
+<div style="position:absolute;left:91.90px;top:481.72px" class="cls_010"><span class="cls_010">71</span></div>
+<div style="position:absolute;left:115.20px;top:481.69px" class="cls_037"><span class="cls_037">Excess social security and tier 1 RRTA tax withheld</span></div>
+<div style="position:absolute;left:351.95px;top:481.77px" class="cls_010"><span class="cls_010">71</span></div>
+<div style="position:absolute;left:91.90px;top:492.71px" class="cls_010"><span class="cls_010">72</span></div>
+<div style="position:absolute;left:115.20px;top:492.71px" class="cls_010"><span class="cls_010">Credit for federal tax on fuels. Attach Form 4136</span></div>
+<div style="position:absolute;left:351.95px;top:493.71px" class="cls_010"><span class="cls_010">72</span></div>
+<div style="position:absolute;left:91.90px;top:505.81px" class="cls_010"><span class="cls_010">73</span></div>
+     <div style="position:absolute;left:167.60px;top:500.71px" class="cls_039"><span class="cls_039"><input type="checkbox"></span></div>
+<div style="position:absolute;left:115.20px;top:505.71px" class="cls_039"><span class="cls_039">Credits from Form: </span><span class="cls_010"> a</span></div>
+<div style="position:absolute;left:185.49px;top:505.71px" class="cls_040"><span class="cls_040">2439</span><span class="cls_010"> b</span></div>
+     <div style="position:absolute;left:204.49px;top:500.71px" class="cls_040"><span class="cls_040"><input type="checkbox"></span></div>
+<div style="position:absolute;left:222.20px;top:505.71px" class="cls_041"><span class="cls_041">Reserved</span><span class="cls_010"> c</span></div>
+     <div style="position:absolute;left:246.20px;top:500.71px" class="cls_041"><span class="cls_041"><input type="checkbox"></span></div>
+<div style="position:absolute;left:264.92px;top:506.12px" class="cls_025"><span class="cls_025">8885</span></div>
+<div style="position:absolute;left:289.16px;top:505.71px" class="cls_010"><span class="cls_010">d</span></div>
+     <div style="position:absolute;left:291.16px;top:500.71px" class="cls_038"><span class="cls_038"><input type="checkbox"></span></div>
+<div style="position:absolute;left:351.95px;top:505.71px" class="cls_010"><span class="cls_010">73</span></div>
+     <div style="position:absolute;left:368.50px;top:385.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:71px;" ></span></div>
+        <div style="position:absolute;left:440.50px;top:385.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:20px;" ></span></div>
+     <div style="position:absolute;left:368.50px;top:397.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:71px;" ></span></div>
+        <div style="position:absolute;left:440.50px;top:397.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:20px;" ></span></div>
+     <div style="position:absolute;left:368.50px;top:409.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:71px;" ></span></div>
+        <div style="position:absolute;left:440.50px;top:409.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:20px;" ></span></div>
+     <div style="position:absolute;left:253.00px;top:421.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:71px;" ></span></div>
+        <div style="position:absolute;left:325.00px;top:421.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:20px;" ></span></div>
+     <div style="position:absolute;left:368.50px;top:433.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:71px;" ></span></div>
+        <div style="position:absolute;left:440.50px;top:433.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:20px;" ></span></div>
+     <div style="position:absolute;left:368.50px;top:445.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:71px;" ></span></div>
+        <div style="position:absolute;left:440.50px;top:445.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:20px;" ></span></div>
+     <div style="position:absolute;left:368.50px;top:457.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:71px;" ></span></div>
+        <div style="position:absolute;left:440.50px;top:457.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:20px;" ></span></div>
+     <div style="position:absolute;left:368.50px;top:469.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:71px;" ></span></div>
+        <div style="position:absolute;left:440.50px;top:469.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:20px;" ></span></div>
+     <div style="position:absolute;left:368.50px;top:481.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:71px;" ></span></div>
+        <div style="position:absolute;left:440.50px;top:481.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:20px;" ></span></div>
+     <div style="position:absolute;left:368.50px;top:493.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:71px;" ></span></div>
+        <div style="position:absolute;left:440.50px;top:493.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:20px;" ></span></div>
+     <div style="position:absolute;left:368.50px;top:505.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:71px;" ></span></div>
+        <div style="position:absolute;left:440.50px;top:505.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:20px;" ></span></div>
+      <div style="position:absolute;left:310.00px;top:505.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:29px;" ></span></div>
+<div style="position:absolute;left:91.90px;top:517.72px" class="cls_010"><span class="cls_010">74</span></div>
+<div style="position:absolute;left:115.20px;top:516.71px" class="cls_010"><span class="cls_010">Add lines 64, 65, 66a, and 67 through 73. These are your total payments</span></div>
+<div style="position:absolute;left:446.66px;top:517.21px" class="cls_004"><span class="cls_004">▶</span></div>
+<div style="position:absolute;left:467.15px;top:517.71px" class="cls_010"><span class="cls_010">74</span></div>
+<div style="position:absolute;left:36.00px;top:528.14px" class="cls_011"><span class="cls_011">Refund</span></div>
+<div style="position:absolute;left:91.90px;top:529.72px" class="cls_010"><span class="cls_010">75</span></div>
+<div style="position:absolute;left:115.20px;top:529.63px" class="cls_038"><span class="cls_038">If line 74 is more than line 63, subtract line 63 from line 74. This is the amount you overpaid</span></div>
+<div style="position:absolute;left:467.15px;top:529.71px" class="cls_010"><span class="cls_010">75</span></div>
+<div style="position:absolute;left:91.90px;top:541.71px" class="cls_010"><span class="cls_010">76a</span></div>
+<div style="position:absolute;left:115.20px;top:541.71px" class="cls_010"><span class="cls_010">Amount of line 75 you want refunded to you. If Form 8888 is attached, check here   .</span></div>
+<div style="position:absolute;left:432.21px;top:542.22px" class="cls_004"><span class="cls_004">▶</span></div>
+     <div style="position:absolute;left:436.21px;top:537.22px" class="cls_002"><span class="cls_002"><input type="checkbox"></span></div>
+<div style="position:absolute;left:464.86px;top:541.72px" class="cls_010"><span class="cls_010">76a</span></div>
+<div style="position:absolute;left:36.00px;top:556.16px" class="cls_005"><span class="cls_005">Direct deposit?</span></div>
+<div style="position:absolute;left:87.00px;top:553.04px" class="cls_004"><span class="cls_004"><sup>▶ </sup></span><span class="cls_010">  b</span></div>
+<div style="position:absolute;left:115.20px;top:553.72px" class="cls_010"><span class="cls_010">Routing number</span></div>
+<div style="position:absolute;left:326.16px;top:554.13px" class="cls_004"><span class="cls_004">▶ </span><span class="cls_025">c Type:</span></div>
+     <div style="position:absolute;left:354.16px;top:549.13px" class="cls_001"><span class="cls_001"><input type="checkbox"></span></div>
+<div style="position:absolute;left:374.00px;top:553.72px" class="cls_025"><span class="cls_025">Checking</span></div>
+     <div style="position:absolute;left:404.00px;top:549.72px" class="cls_042"><span class="cls_042"><input type="checkbox"></span></div>
+<div style="position:absolute;left:424.40px;top:554.13px" class="cls_025"><span class="cls_025">Savings</span></div>
+<div style="position:absolute;left:36.00px;top:564.56px" class="cls_005"><span class="cls_005">See</span></div>
+<div style="position:absolute;left:87.00px;top:565.71px" class="cls_004"><span class="cls_004">▶</span><span class="cls_010">   d</span></div>
+<div style="position:absolute;left:115.20px;top:565.71px" class="cls_010"><span class="cls_010">Account number</span></div>
+<div style="position:absolute;left:36.00px;top:572.96px" class="cls_005"><span class="cls_005">instructions.</span></div>
+<div style="position:absolute;left:91.90px;top:577.71px" class="cls_010"><span class="cls_010">77</span></div>
+<div style="position:absolute;left:115.20px;top:577.66px" class="cls_042"><span class="cls_042">Amount of line 75 you want applied to your 2018 estimated tax</span><span class="cls_010"> </span><span class="cls_004">▶</span></div>
+<div style="position:absolute;left:351.95px;top:577.19px" class="cls_010"><span class="cls_010">77</span></div>
+     <div style="position:absolute;left:368.50px;top:577.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:71px;" ></span></div>
+        <div style="position:absolute;left:440.50px;top:577.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:20px;" ></span></div>
+<div style="position:absolute;left:36.00px;top:586.84px" class="cls_043"><span class="cls_043">Amount</span></div>
+<div style="position:absolute;left:91.90px;top:588.72px" class="cls_010"><span class="cls_010">78</span></div>
+<div style="position:absolute;left:115.20px;top:588.72px" class="cls_010"><span class="cls_010">Amount you owe. Subtract line 74 from line 63. For details on how to pay, see instructions</span></div>
+<div style="position:absolute;left:449.18px;top:589.21px" class="cls_004"><span class="cls_004">▶</span></div>
+<div style="position:absolute;left:467.15px;top:589.71px" class="cls_010"><span class="cls_010">78</span></div>
+     <div style="position:absolute;left:483.50px;top:518.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:71px;" ></span></div>
+        <div style="position:absolute;left:555.50px;top:518.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:21px;" ></span></div>
+     <div style="position:absolute;left:483.50px;top:529.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:71px;" ></span></div>
+        <div style="position:absolute;left:555.50px;top:529.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:21px;" ></span></div>
+     <div style="position:absolute;left:483.50px;top:541.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:71px;" ></span></div>
+        <div style="position:absolute;left:555.50px;top:541.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:21px;" ></span></div>
+     <div style="position:absolute;left:483.50px;top:589.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:71px;" ></span></div>
+        <div style="position:absolute;left:555.50px;top:589.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:21px;" ></span></div>
+      <div style="position:absolute;left:187.50px;top:553.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:14px;" ></span></div>
+        <div style="position:absolute;left:202.00px;top:553.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:14px;" ></span></div>
+        <div style="position:absolute;left:217.00px;top:553.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:14px;" ></span></div>
+        <div style="position:absolute;left:231.00px;top:553.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:14px;" ></span></div>
+        <div style="position:absolute;left:245.50px;top:553.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:14px;" ></span></div>
+        <div style="position:absolute;left:260.00px;top:553.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:14px;" ></span></div>
+        <div style="position:absolute;left:274.50px;top:553.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:14px;" ></span></div>
+        <div style="position:absolute;left:289.00px;top:553.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:14px;" ></span></div>
+        <div style="position:absolute;left:303.00px;top:553.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:14px;" ></span></div>
+      <div style="position:absolute;left:187.50px;top:565.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:14px;" ></span></div>
+        <div style="position:absolute;left:202.00px;top:565.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:14px;" ></span></div>
+        <div style="position:absolute;left:217.00px;top:565.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:14px;" ></span></div>
+        <div style="position:absolute;left:231.00px;top:565.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:14px;" ></span></div>
+        <div style="position:absolute;left:245.50px;top:565.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:14px;" ></span></div>
+        <div style="position:absolute;left:260.00px;top:565.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:14px;" ></span></div>
+        <div style="position:absolute;left:274.50px;top:565.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:14px;" ></span></div>
+        <div style="position:absolute;left:289.00px;top:565.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:14px;" ></span></div>
+        <div style="position:absolute;left:303.00px;top:565.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:14px;" ></span></div>
+        <div style="position:absolute;left:317.50px;top:565.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:14px;" ></span></div>
+        <div style="position:absolute;left:332.00px;top:565.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:14px;" ></span></div>
+        <div style="position:absolute;left:346.50px;top:565.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:14px;" ></span></div>
+        <div style="position:absolute;left:360.80px;top:565.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:14px;" ></span></div>
+        <div style="position:absolute;left:375.00px;top:565.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:14px;" ></span></div>
+        <div style="position:absolute;left:389.00px;top:565.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:14px;" ></span></div>
+        <div style="position:absolute;left:403.50px;top:565.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:14px;" ></span></div>
+        <div style="position:absolute;left:418.00px;top:565.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:11px;width:14px;" ></span></div>
+<div style="position:absolute;left:36.00px;top:598.23px" class="cls_043"><span class="cls_043">You Owe</span></div>
+<div style="position:absolute;left:91.90px;top:600.72px" class="cls_010"><span class="cls_010">79</span></div>
+<div style="position:absolute;left:115.20px;top:600.72px" class="cls_010"><span class="cls_010">Estimated tax penalty (see instructions)</span></div>
+<div style="position:absolute;left:351.95px;top:601.71px" class="cls_010"><span class="cls_010">79</span></div>
+     <div style="position:absolute;left:368.50px;top:600.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:12px;width:71px;" ></span></div>
+        <div style="position:absolute;left:440.50px;top:600.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:12px;width:20px;" ></span></div>
+     <div style="position:absolute;left:424.00px;top:609.71px" class="cls_043"><span class="cls_043"><input type="checkbox"></span></div>
+<div style="position:absolute;left:446.00px;top:613.71px" class="cls_010"><span class="cls_010">Yes. Complete below.</span></div>
+     <div style="position:absolute;left:532.00px;top:609.71px" class="cls_044"><span class="cls_044"><input type="checkbox"></span></div>
+<div style="position:absolute;left:554.00px;top:613.71px" class="cls_010"><span class="cls_010">No</span></div>
+<div style="position:absolute;left:36.00px;top:612.71px" class="cls_044"><span class="cls_044">Third Party  </span><span class="cls_010"><sup>Do you want to allow another person to discuss this return with the IRS (see instructions)?</sup></span></div>
+<div style="position:absolute;left:100.80px;top:624.70px" class="cls_005"><span class="cls_005">Designee’s</span></div>
+<div style="position:absolute;left:280.80px;top:624.70px" class="cls_005"><span class="cls_005">Phone</span></div>
+<div style="position:absolute;left:417.60px;top:624.40px" class="cls_005"><span class="cls_005">Personal identification</span></div>
+<div style="position:absolute;left:36.00px;top:625.44px" class="cls_044"><span class="cls_044">Designee</span></div>
+<div style="position:absolute;left:485.81px;top:631.94px" class="cls_004"><span class="cls_004">▶</span></div>
+<div style="position:absolute;left:100.80px;top:632.24px" class="cls_005"><span class="cls_005">name  </span><span class="cls_004">▶</span></div>
+<div style="position:absolute;left:280.80px;top:632.24px" class="cls_005"><span class="cls_005">no.  </span><span class="cls_004">▶</span></div>
+<div style="position:absolute;left:417.60px;top:632.44px" class="cls_005"><span class="cls_005">number (PIN)</span></div>
+<div style="position:absolute;left:89.40px;top:643.24px" class="cls_045"><span class="cls_045">Under penalties of perjury, I declare that I have examined this return and accompanying schedules and statements, and to the best of my knowledge and belief, they are true, correct, and</span></div>
+<div style="position:absolute;left:36.00px;top:641.97px" class="cls_006"><span class="cls_006">Sign</span></div>
+<div style="position:absolute;left:89.40px;top:651.04px" class="cls_045"><span class="cls_045">accurately list all amounts and sources of income I received during the tax year. Declaration of preparer (other than taxpayer) is based on all information of which preparer has any knowledge.</span></div>
+<div style="position:absolute;left:36.00px;top:652.97px" class="cls_006"><span class="cls_006">Here</span></div>
+<div style="position:absolute;left:100.79px;top:661.00px" class="cls_005"><span class="cls_005">Your signature</span></div>
+<div style="position:absolute;left:277.60px;top:661.00px" class="cls_005"><span class="cls_005">Date</span></div>
+<div style="position:absolute;left:328.00px;top:661.00px" class="cls_005"><span class="cls_005">Your occupation</span></div>
+<div style="position:absolute;left:464.80px;top:661.00px" class="cls_005"><span class="cls_005">Daytime phone number</span></div>
+     <div style="position:absolute;left:100.50px;top:670.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:14px;width:165px;" ></span></div>
+        <div style="position:absolute;left:274.50px;top:670.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:14px;width:46px;" ></span></div>
+        <div style="position:absolute;left:325.00px;top:670.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:14px;width:130px;" ></span></div>
+        <div style="position:absolute;left:462.00px;top:670.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:14px;width:110px;" ></span></div>
+        <div style="position:absolute;left:510.00px;top:694.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:14px;width:62px;" ></span></div>
+     <div style="position:absolute;left:100.50px;top:694.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:14px;width:165px;" ></span></div>
+        <div style="position:absolute;left:274.50px;top:694.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:14px;width:46px;" ></span></div>
+        <div style="position:absolute;left:325.00px;top:694.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:14px;width:130px;" ></span></div>
+<div style="position:absolute;left:36.00px;top:669.32px" class="cls_009"><span class="cls_009">Joint return? See</span></div>
+<div style="position:absolute;left:36.00px;top:677.72px" class="cls_009"><span class="cls_009">instructions.</span></div>
+<div style="position:absolute;left:36.00px;top:686.12px" class="cls_009"><span class="cls_009">Keep a copy for</span></div>
+<div style="position:absolute;left:100.79px;top:685.06px" class="cls_005"><span class="cls_005">Spouse’s signature. If a joint return, both must sign.</span></div>
+<div style="position:absolute;left:277.60px;top:685.06px" class="cls_005"><span class="cls_005">Date</span></div>
+<div style="position:absolute;left:328.00px;top:685.06px" class="cls_005"><span class="cls_005">Spouse’s occupation</span></div>
+<div style="position:absolute;left:464.80px;top:685.62px" class="cls_046"><span class="cls_046">If the IRS sent you an Identity Protection</span></div>
+<div style="position:absolute;left:464.80px;top:692.62px" class="cls_046"><span class="cls_046">PIN, enter it</span></div>
+<div style="position:absolute;left:36.00px;top:694.52px" class="cls_009"><span class="cls_009">your records.</span></div>
+<div style="position:absolute;left:464.80px;top:699.62px" class="cls_046"><span class="cls_046">here (see inst.)</span></div>
+<div style="position:absolute;left:100.60px;top:708.50px" class="cls_005"><span class="cls_005">Print/Type preparer’s name</span></div>
+<div style="position:absolute;left:216.00px;top:709.00px" class="cls_005"><span class="cls_005">Preparer’s signature</span></div>
+<div style="position:absolute;left:392.80px;top:709.00px" class="cls_005"><span class="cls_005">Date</span></div>
+<div style="position:absolute;left:517.15px;top:708.50px" class="cls_005"><span class="cls_005">PTIN</span></div>
+<div style="position:absolute;left:36.00px;top:712.11px" class="cls_011"><span class="cls_011">Paid</span></div>
+<div style="position:absolute;left:464.80px;top:714.40px" class="cls_005"><span class="cls_005">Check</span></div>
+     <div style="position:absolute;left:483.41px;top:707.40px" class="cls_045"><span class="cls_045"><input type="checkbox"></span></div>
+<div style="position:absolute;left:502.41px;top:714.40px" class="cls_005"><span class="cls_005">if</span></div>
+<div style="position:absolute;left:464.80px;top:721.40px" class="cls_005"><span class="cls_005">self-employed</span></div>
+<div style="position:absolute;left:36.00px;top:724.11px" class="cls_011"><span class="cls_011">Preparer</span></div>
+<div style="position:absolute;left:100.60px;top:735.00px" class="cls_005"><span class="cls_005">Firm’s name</span></div>
+<div style="position:absolute;left:148.98px;top:736.00px" class="cls_047"><span class="cls_047">▶</span></div>
+<div style="position:absolute;left:464.80px;top:735.00px" class="cls_005"><span class="cls_005">Firm’s EIN  </span><span class="cls_047">▶</span></div>
+<div style="position:absolute;left:36.00px;top:736.11px" class="cls_011"><span class="cls_011">Use Only</span></div>
+<div style="position:absolute;left:100.60px;top:747.00px" class="cls_005"><span class="cls_005">Firm’s address </span><span class="cls_047">▶</span></div>
+<div style="position:absolute;left:464.80px;top:747.00px" class="cls_005"><span class="cls_005">Phone no.</span></div>
+        <div style="position:absolute;left:100.00px;top:718.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:14.5px;width:100px;" ></span></div>
+          <div style="position:absolute;left:209.50px;top:718.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:14.5px;width:172px;" ></span></div>
+          <div style="position:absolute;left:389.50px;top:718.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:14.5px;width:65.5px;" ></span></div>
+          <div style="position:absolute;left:512.00px;top:718.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:9pt;height:14.5px;width:60.5px;" ></span></div>
+        <div style="position:absolute;left:158.00px;top:733.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:5pt;height:11.5px;width:297px;" ></span></div>
+          <div style="position:absolute;left:505.00px;top:733.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:5pt;height:11.5px;width:68px;" ></span></div>
+        <div style="position:absolute;left:158.00px;top:745.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:5pt;height:11px;width:297px;" ></span></div>
+          <div style="position:absolute;left:505.00px;top:745.00px" class="cls_005"><span class="cls_005"><input type="text" style="font-size:5pt;height:11px;width:68px;" ></span></div>
+<div style="position:absolute;left:36.00px;top:758.00px" class="cls_005"><span class="cls_005">Go to </span><A <!--HREF="http://www.irs.gov/form1040/">-->www.irs.gov/Form1040</A> </span><span class="cls_005"> for instructions and the latest information.</span></div>
+<div style="position:absolute;left:513.50px;top:755.14px" class="cls_005"><span class="cls_005">Form </span><span class="cls_011">1040 </span><span class="cls_005">(2017)</span></div>
+</div>
+</body>
+</html>
